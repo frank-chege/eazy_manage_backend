@@ -1,0 +1,468 @@
+2024-08-19 02:05:37,985 ERROR An error occored while checking the password: /home/frank/virtual_doctor_backend/models/base_model.py 20
+Traceback (most recent call last):
+  File "/home/frank/virtual_doctor_backend/models/base_model.py", line 18, in check_pwd
+    res = bcrypt.checkpw(password.encode('UTF-8'), hashed_pwd)
+  File "/usr/lib/python3/dist-packages/bcrypt/__init__.py", line 120, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2024-08-19 02:05:57,644 ERROR An error occored while checking the password: /home/frank/virtual_doctor_backend/models/base_model.py 20
+Traceback (most recent call last):
+  File "/home/frank/virtual_doctor_backend/models/base_model.py", line 18, in check_pwd
+    res = bcrypt.checkpw(password.encode('UTF-8'), hashed_pwd)
+  File "/usr/lib/python3/dist-packages/bcrypt/__init__.py", line 120, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2024-08-19 02:07:02,256 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:07:02,256 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:07:02,256 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:07:02,360 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:07:02,376 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:07:02,376 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:07:02,377 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:07:03,939 ERROR An error occored while checking the password: /home/frank/virtual_doctor_backend/models/base_model.py 20
+Traceback (most recent call last):
+  File "/home/frank/virtual_doctor_backend/models/base_model.py", line 18, in check_pwd
+    res = bcrypt.checkpw(password.encode('UTF-8'), hashed_pwd)
+  File "/usr/lib/python3/dist-packages/bcrypt/__init__.py", line 120, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2024-08-19 02:07:44,974 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:07:44,974 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:07:44,975 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:07:45,098 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:07:45,118 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:07:45,118 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:07:45,118 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:07:45,780 ERROR An error occored while checking the password: /home/frank/virtual_doctor_backend/models/base_model.py 20
+Traceback (most recent call last):
+  File "/home/frank/virtual_doctor_backend/models/base_model.py", line 18, in check_pwd
+    res = bcrypt.checkpw(password.encode('UTF-8'), hashed_pwd)
+  File "/usr/lib/python3/dist-packages/bcrypt/__init__.py", line 120, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2024-08-19 02:08:03,666 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:08:03,666 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:08:03,666 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:08:03,765 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:08:03,781 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:08:03,781 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:08:03,782 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:10:43,056 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:10:43,056 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:10:43,056 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:10:43,165 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:10:43,181 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:10:43,181 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:10:43,181 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:11:23,694 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:11:23,695 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:11:23,695 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:11:23,810 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:11:23,830 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:11:23,830 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:11:23,831 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:11:34,542 ERROR An error occored while checking the password: /home/frank/virtual_doctor_backend/models/base_model.py 20
+Traceback (most recent call last):
+  File "/home/frank/virtual_doctor_backend/models/base_model.py", line 18, in check_pwd
+    res = bcrypt.checkpw(password.encode('UTF-8'), hashed_pwd)
+  File "/usr/lib/python3/dist-packages/bcrypt/__init__.py", line 120, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2024-08-19 02:16:19,450 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:16:19,451 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:16:19,451 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:16:19,557 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:16:19,572 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:16:19,572 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:16:19,573 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:16:39,787 ERROR An error occored while checking the password: /home/frank/virtual_doctor_backend/models/base_model.py 20
+Traceback (most recent call last):
+  File "/home/frank/virtual_doctor_backend/models/base_model.py", line 18, in check_pwd
+    res = bcrypt.checkpw(password.encode('UTF-8'), hashed_pwd)
+  File "/usr/lib/python3/dist-packages/bcrypt/__init__.py", line 120, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2024-08-19 02:17:15,590 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:17:15,590 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:17:15,590 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:17:15,700 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:17:15,714 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:17:15,714 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:17:15,715 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:17:18,292 ERROR An error occored while checking the password: /home/frank/virtual_doctor_backend/models/base_model.py 20
+Traceback (most recent call last):
+  File "/home/frank/virtual_doctor_backend/models/base_model.py", line 18, in check_pwd
+    res = bcrypt.checkpw(password.encode('UTF-8'), hashed_pwd)
+  File "/usr/lib/python3/dist-packages/bcrypt/__init__.py", line 120, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2024-08-19 02:17:31,778 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:17:31,778 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:17:31,779 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:17:31,899 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:17:31,921 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:17:31,921 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:17:31,921 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:17:33,169 ERROR An error occored while checking the password: /home/frank/virtual_doctor_backend/models/base_model.py 20
+Traceback (most recent call last):
+  File "/home/frank/virtual_doctor_backend/models/base_model.py", line 18, in check_pwd
+    res = bcrypt.checkpw(password.encode('UTF-8'), hashed_pwd)
+  File "/usr/lib/python3/dist-packages/bcrypt/__init__.py", line 120, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2024-08-19 02:17:41,395 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:17:41,396 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:17:41,396 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:17:41,494 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:17:41,509 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:17:41,509 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:17:41,509 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:18:30,489 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/app.py 41
+2024-08-19 02:18:30,489 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/app.py 59
+2024-08-19 02:18:30,489 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/app.py 71
+2024-08-19 02:18:30,518 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/app.py 83
+2024-08-19 02:18:30,534 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/app.py 91
+2024-08-19 02:18:30,534 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/app.py 104
+2024-08-19 02:18:30,534 INFO App created successfully: /home/frank/virtual_doctor_backend/app.py 114
+2024-08-19 02:19:11,383 ERROR An error occored while checking the password: /home/frank/virtual_doctor_backend/models/base_model.py 20
+Traceback (most recent call last):
+  File "/home/frank/virtual_doctor_backend/models/base_model.py", line 18, in check_pwd
+    res = bcrypt.checkpw(password.encode('UTF-8'), hashed_pwd)
+  File "/usr/lib/python3/dist-packages/bcrypt/__init__.py", line 120, in checkpw
+    raise TypeError("Unicode-objects must be encoded before checking")
+TypeError: Unicode-objects must be encoded before checking
+2024-08-19 02:33:35,067 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:33:35,067 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:33:35,067 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:33:35,158 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:33:35,172 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:33:35,173 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:33:35,173 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:33:36,170 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:33:36,170 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:33:36,171 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:33:36,265 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:33:36,278 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:33:36,278 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:33:36,279 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:38:46,667 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:38:46,667 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:38:46,667 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:38:46,799 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:38:46,826 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:38:46,827 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:38:46,827 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:38:59,895 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:38:59,895 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:38:59,895 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:38:59,996 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:39:00,012 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:39:00,012 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:39:00,013 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:44:49,485 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 02:44:49,486 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 02:44:49,486 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 02:44:49,587 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 02:44:49,601 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 02:44:49,602 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 02:44:49,602 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 02:45:31,745 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Length must be between 6 and 16.']}}}: /home/frank/virtual_doctor_backend/api/auth.py 177
+2024-08-19 10:49:12,891 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 10:49:12,892 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 10:49:12,893 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 10:49:14,491 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 10:49:14,607 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 10:49:14,609 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 10:49:14,611 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 10:49:18,826 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 10:49:18,827 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 10:49:18,827 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 10:49:19,115 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 10:49:19,162 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 10:49:19,162 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 10:49:19,163 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 12:44:20,039 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-19 12:44:20,040 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-19 12:44:20,041 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-19 12:44:20,427 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-19 12:44:20,473 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-19 12:44:20,474 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-19 12:44:20,474 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-19 17:45:44,279 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/app.py 41
+2024-08-19 17:45:44,280 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/app.py 59
+2024-08-19 17:45:44,280 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/app.py 71
+2024-08-19 17:45:44,355 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/app.py 83
+2024-08-19 17:45:44,396 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/app.py 91
+2024-08-19 17:45:44,397 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/app.py 104
+2024-08-19 17:45:44,397 INFO App created successfully: /home/frank/virtual_doctor_backend/app.py 114
+2024-08-19 17:45:56,227 ERROR An error occured while setting the password: /home/frank/virtual_doctor_backend/models/base_model.py 12
+Traceback (most recent call last):
+  File "/home/frank/virtual_doctor_backend/models/base_model.py", line 9, in set_pwd
+    self.password = bcrypt.hashpw(password.encode('UTF-8'), bcrypt.gensalt())
+AttributeError: 'function' object has no attribute 'encode'
+2024-08-21 19:30:44,574 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-21 19:30:44,618 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-21 19:30:44,619 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-21 19:30:45,599 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-21 19:30:45,646 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-21 19:30:45,647 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-21 19:30:45,647 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-21 19:30:47,349 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-21 19:30:47,350 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-21 19:30:47,350 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-21 19:30:47,452 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-21 19:30:47,469 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-21 19:30:47,469 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-21 19:30:47,469 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-22 11:49:16,893 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-22 11:49:16,942 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-22 11:49:16,943 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-22 11:49:18,488 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-22 11:49:18,592 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-22 11:49:18,593 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-22 11:49:18,594 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-22 11:49:22,350 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-22 11:49:22,351 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-22 11:49:22,351 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-22 11:49:22,622 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-22 11:49:22,664 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-22 11:49:22,665 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-22 11:49:22,666 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-22 22:19:47,732 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-22 22:19:47,794 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-22 22:19:47,795 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-22 22:19:48,646 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-22 22:19:48,717 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-22 22:19:48,718 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-22 22:19:48,719 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-22 22:19:51,983 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-22 22:19:51,984 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-22 22:19:51,985 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-22 22:19:52,301 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-22 22:19:52,340 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-22 22:19:52,341 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-22 22:19:52,341 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-23 16:51:15,616 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-23 16:51:15,675 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-23 16:51:15,675 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-23 16:51:16,351 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-23 16:51:16,395 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-23 16:51:16,396 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-23 16:51:16,396 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-23 16:51:20,910 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-23 16:51:20,911 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-23 16:51:20,911 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-23 16:51:21,201 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-23 16:51:21,248 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-23 16:51:21,249 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-23 16:51:21,249 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-23 19:18:21,217 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-23 19:18:21,249 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-23 19:18:21,251 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-23 20:09:34,762 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-23 20:09:34,820 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-23 20:09:34,821 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-23 20:09:34,821 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-23 20:09:38,596 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-23 20:09:38,596 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-23 20:09:38,597 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-23 20:09:38,794 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-23 20:09:38,824 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-23 20:09:38,825 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-23 20:09:38,825 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-24 13:05:05,131 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-24 13:05:05,131 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-24 13:05:05,132 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-24 13:05:05,260 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-24 13:05:05,277 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-24 13:05:05,278 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-24 13:05:05,278 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-24 13:05:06,481 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-24 13:05:06,482 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-24 13:05:06,482 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-24 13:05:06,584 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-24 13:05:06,598 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-24 13:05:06,598 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-24 13:05:06,598 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 00:41:01,888 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 00:41:01,971 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 00:41:01,972 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 00:41:02,208 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 00:41:02,223 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 00:41:02,223 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 00:41:02,223 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 00:41:25,022 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 00:41:25,022 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 00:41:25,022 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 00:41:25,126 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 00:41:25,142 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 00:41:25,142 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 00:41:25,142 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 00:42:11,324 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 00:42:11,324 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 00:42:11,324 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 00:42:11,424 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 00:42:11,439 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 00:42:11,439 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 00:42:11,439 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 00:42:26,959 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 00:42:26,959 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 00:42:26,959 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 00:42:27,063 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 00:42:27,078 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 00:42:27,078 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 00:42:27,078 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 00:42:45,093 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 00:42:45,093 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 00:42:45,094 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 00:42:45,219 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 00:42:45,238 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 00:42:45,239 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 00:42:45,239 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 01:04:21,289 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 01:04:21,290 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 01:04:21,290 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 01:04:21,453 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 01:04:21,469 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 01:04:21,469 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 01:04:21,469 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 12:17:41,796 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 12:17:41,838 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 12:17:41,840 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 12:17:42,746 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 12:17:42,760 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 12:17:42,760 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 12:17:42,760 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 12:17:43,949 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 12:17:43,949 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 12:17:43,949 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 12:17:44,057 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 12:17:44,072 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 12:17:44,072 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 12:17:44,073 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 12:19:49,022 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 12:19:49,023 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 12:19:49,023 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 12:19:49,141 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 12:19:49,159 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 12:19:49,159 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 12:19:49,159 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 12:28:34,578 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 12:28:34,578 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 12:28:34,578 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 12:28:34,695 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 12:28:34,715 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 12:28:34,715 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 12:28:34,715 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 12:28:39,447 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 12:28:39,448 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 12:28:39,448 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 12:28:39,550 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 12:28:39,566 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 12:28:39,566 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 12:28:39,566 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 19:55:26,938 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/app.py 41
+2024-08-25 19:55:26,939 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/app.py 59
+2024-08-25 19:55:26,940 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/app.py 71
+2024-08-25 19:55:26,998 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/app.py 83
+2024-08-25 19:55:27,012 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/app.py 91
+2024-08-25 19:55:27,012 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/app.py 104
+2024-08-25 19:55:27,012 INFO App created successfully: /home/frank/virtual_doctor_backend/app.py 114
+2024-08-25 20:28:43,660 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 20:28:43,661 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 20:28:43,661 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 20:28:43,775 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 20:28:43,792 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 20:28:43,792 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 20:28:43,793 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 20:29:28,346 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 20:29:28,346 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 20:29:28,346 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 20:29:28,451 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 20:29:28,469 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 20:29:28,469 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 20:29:28,469 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-25 20:29:53,016 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-25 20:29:53,017 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-25 20:29:53,017 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-25 20:29:53,123 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-25 20:29:53,137 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-25 20:29:53,138 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-25 20:29:53,138 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-26 00:08:46,859 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-26 00:08:46,925 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-26 00:08:46,925 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-26 00:08:47,205 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-26 00:08:47,223 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-26 00:08:47,224 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-26 00:08:47,224 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-26 00:08:49,199 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-26 00:08:49,199 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-26 00:08:49,199 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-26 00:08:49,301 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-26 00:08:49,318 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-26 00:08:49,318 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-26 00:08:49,318 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-26 00:12:07,821 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-26 00:12:07,822 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-26 00:12:07,822 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-26 00:12:07,923 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-26 00:12:07,939 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-26 00:12:07,939 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-26 00:12:07,939 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-26 00:18:54,706 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-26 00:18:54,706 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-26 00:18:54,706 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-26 00:18:54,811 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-26 00:18:54,829 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-26 00:18:54,829 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-26 00:18:54,829 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-26 01:35:10,075 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-26 01:35:10,075 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-26 01:35:10,075 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-26 01:35:10,177 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-26 01:35:10,194 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-26 01:35:10,194 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-26 01:35:10,194 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-26 01:39:18,824 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-26 01:39:18,824 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-26 01:39:18,825 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-26 01:39:18,952 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-26 01:39:18,972 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-26 01:39:18,972 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-26 01:39:18,973 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-08-26 01:43:24,071 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-08-26 01:43:24,071 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-08-26 01:43:24,071 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-08-26 01:43:24,174 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-08-26 01:43:24,191 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-08-26 01:43:24,191 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-08-26 01:43:24,191 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-09-04 00:53:24,880 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-09-04 00:53:24,909 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-09-04 00:53:24,910 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-09-04 00:53:25,983 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-09-04 00:53:26,053 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-09-04 00:53:26,054 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-09-04 00:53:26,054 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-09-04 00:53:28,619 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-09-04 00:53:28,619 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-09-04 00:53:28,620 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-09-04 00:53:28,812 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-09-04 00:53:28,844 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-09-04 00:53:28,845 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-09-04 00:53:28,845 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-09-04 11:07:43,042 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-09-04 11:07:43,043 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-09-04 11:07:43,043 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-09-04 11:07:43,243 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-09-04 11:07:43,275 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-09-04 11:07:43,275 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-09-04 11:07:43,275 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
+2024-09-04 11:07:46,499 INFO Logging setup successfully: /home/frank/virtual_doctor_backend/./app.py 41
+2024-09-04 11:07:46,500 INFO Uploads directory set up successfully: /home/frank/virtual_doctor_backend/./app.py 59
+2024-09-04 11:07:46,500 INFO DataBase set up successfully: /home/frank/virtual_doctor_backend/./app.py 71
+2024-09-04 11:07:46,710 INFO Migrations set up successfully: /home/frank/virtual_doctor_backend/./app.py 83
+2024-09-04 11:07:46,743 INFO Blueprints registered successfully: /home/frank/virtual_doctor_backend/./app.py 91
+2024-09-04 11:07:46,744 INFO Mail service setup successfully: /home/frank/virtual_doctor_backend/./app.py 104
+2024-09-04 11:07:46,744 INFO App created successfully: /home/frank/virtual_doctor_backend/./app.py 114
