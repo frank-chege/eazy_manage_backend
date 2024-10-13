@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 '''entry point to the program
 creates app and runs it'''
-from api import register_routes
+from api.v1 import register_routes
 from flask import Flask
 from models.models import db
 from dotenv import load_dotenv
@@ -12,7 +12,6 @@ from log_conf import logger
 from flask_talisman import Talisman
 from flask_cors import CORS
 from flask_jwt_extended import JWTManager
-from csrf import csrf
 from datetime import timedelta
 
 def create_app():
@@ -26,17 +25,17 @@ def create_app():
     app.config['JWT_TOKEN_LOCATION'] = ['cookies']
     app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=2)
     app.config['JWT_REFRESH_TOKEN_EXPIRES'] = timedelta(days=1)
-    #app.config['JWT_COOKIE_SECURE'] = True
+    app.config['JWT_COOKIE_SECURE'] = False
+    #app.config['JWT_COOKIE_HTTPONLY'] = True
+    app.config['JWT_COOKIE_SAMESITE'] = 'Lax'
     app.config['JWT_ACCESS_COOKIE_PATH'] = '/'
-    #app.config['JWT_COOKIE_CSRF_PROTECT'] = True  # Enable CSRF protection for cookies
+    app.config['JWT_COOKIE_CSRF_PROTECT'] = True
     JWTManager(app)
 
     #serve the app over https only
     # talisman = Talisman(app, content_security_policy=None)
 
-    #configure cors and csrf protection
-    CORS(app)
-    csrf.init_app(app)
+    CORS(app, supports_credentials=True)
     
     #setup logging
     try:
@@ -46,42 +45,25 @@ def create_app():
         app.logger.warning(f'Logging setup failed!', exc_info=True)
         raise
 
-    #create upload directories
-    try:
-        app.config['UPLOAD_FOLDER'] = os.path.join(app.root_path, 'uploads')
-        #verification directories
-        pharmacy_dir = os.path.join(app.config['UPLOAD_FOLDER'], 'pharmacy')
-        hospital_dir = os.path.join(app.config['UPLOAD_FOLDER'], 'hospital')
-        #prescriptions directories 
-        prescription_dir = os.path.join(app.config['UPLOAD_FOLDER'], 'prescriptions')
-
-        # Ensure the directories exist
-        for dir in [app.config['UPLOAD_FOLDER'], pharmacy_dir, hospital_dir, prescription_dir]:
-            if not os.path.exists(dir):
-                os.makedirs(dir)
-        app.logger.info('Uploads directory set up successfully')
-    except:
-        app.logger.critical('Uploads directory not set up', exc_info=True)
-        raise
-    
-    #configure the db
+    #set up database
     try:
         db_pwd = os.getenv('DB_PASSWORD')
         db_user = os.getenv('DB_USER')
         db_host = os.getenv('DB_HOST')
-        app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{db_user}:{db_pwd}@{db_host}/virtual_doctor'
+        app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{db_user}:{db_pwd}@{db_host}/eazy_manage'
         app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
         app.logger.info('DataBase set up successfully')
-    except:
-        app.logger.critical(f'An error occurred while setting up the database!', exc_info=True)
-        raise
-
-    #initialise db and set up migration
-    try:
         db.init_app(app)
         #create the database
         with app.app_context():
             db.create_all()
+        app.logger.info('database set up successfully')
+    except:
+        app.logger.warning(f'database set up failed!', exc_info=True)
+        raise
+
+    #set up migration
+    try:
         Migrate(app, db)
         app.logger.info('Migrations set up successfully')
     except:
