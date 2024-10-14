@@ -308,3 +308,31 @@ sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1049, "Unknown 
 2024-10-14 21:05:54,489 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
 2024-10-14 21:05:54,490 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
 2024-10-14 21:05:54,491 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-14 23:34:16,637 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
+2024-10-14 23:34:16,638 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
+2024-10-14 23:34:18,672 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
+2024-10-14 23:34:18,682 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
+2024-10-14 23:34:18,696 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
+2024-10-14 23:34:18,697 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
+2024-10-14 23:34:18,698 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
+2024-10-14 23:34:34,082 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
+2024-10-14 23:34:34,082 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
+2024-10-14 23:34:34,199 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
+2024-10-14 23:34:34,211 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
+2024-10-14 23:34:34,229 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
+2024-10-14 23:34:34,230 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
+2024-10-14 23:34:34,230 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
+2024-10-14 23:35:17,426 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
+2024-10-14 23:35:17,427 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
+2024-10-14 23:35:17,537 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
+2024-10-14 23:35:17,544 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
+2024-10-14 23:35:17,555 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
+2024-10-14 23:35:17,555 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
+2024-10-14 23:35:17,556 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
+2024-10-14 23:35:25,233 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
+2024-10-14 23:35:25,234 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
+2024-10-14 23:35:25,355 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
+2024-10-14 23:35:25,362 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
+2024-10-14 23:35:25,374 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
+2024-10-14 23:35:25,375 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
+2024-10-14 23:35:25,376 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
