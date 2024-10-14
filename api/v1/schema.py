@@ -9,7 +9,6 @@ class validate_schema(Schema):
     lastName = fields.Str(required=False, validate=Length(min=2, max=50))
     email = fields.Email(required=True)
     contact = fields.Str(required=False, validate=Length(min=10, max=15))
-    emergencyContact = fields.Str(required=False, validate=Length(min=10, max=15))
     gender = fields.Str(required=False)
     department = fields.Str(required=False)
     jobTitle = fields.Str(required=False)

@@ -280,3 +280,31 @@ sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1049, "Unknown 
 2024-10-13 22:11:08,076 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'email': ['Not a valid email address.'], 'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 101
 2024-10-13 22:11:15,763 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'email': ['Not a valid email address.'], 'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 101
 2024-10-13 22:11:24,341 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 101
+2024-10-14 20:56:55,035 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-14 20:56:55,046 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-14 20:56:56,773 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-14 20:56:56,782 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-14 20:56:56,796 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-14 20:56:56,796 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-14 20:56:56,797 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-14 20:56:59,463 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-14 20:56:59,463 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-14 20:56:59,563 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-14 20:56:59,573 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-14 20:56:59,590 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-14 20:56:59,591 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-14 20:56:59,592 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-14 21:05:50,948 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-14 21:05:50,948 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-14 21:05:51,046 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-14 21:05:51,052 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-14 21:05:51,060 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-14 21:05:51,061 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-14 21:05:51,061 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-14 21:05:54,020 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-14 21:05:54,022 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-14 21:05:54,440 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-14 21:05:54,456 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-14 21:05:54,489 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-14 21:05:54,490 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-14 21:05:54,491 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
