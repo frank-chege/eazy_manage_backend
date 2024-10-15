@@ -16,13 +16,13 @@ class Users(db.Model, Base_model):
     #gender = db.Column(db.Enum('male', 'female', 'trans', 'other'), nullable=False)
     status = db.Column(db.Enum('active', 'leave', 'inactive'), default='active')
     department = db.Column(db.Enum('ACCOUNTS', 'IT', 'HR'), nullable=False)
-    job_title = db.Column(db.Enum('hr', 'manager', 'chef', 'accoutant'), nullable=False)
+    job_title = db.Column(db.Enum('hr', 'developer', 'accoutant'), nullable=False)
     #national_id = db.Column(db.Integer, unique=True, nullable=True)
     joined = db.Column(db.Date, nullable=True)
     password = db.Column(db.String(255), nullable=False)
     
     # relationships
-    task = relationship('Tasks', back_populates='user_id')
+    task = relationship('Tasks', back_populates='user')
 
 class Tasks(db.Model):
     __tablename__ = 'tasks'
@@ -40,3 +40,5 @@ class Tasks(db.Model):
     comments = db.Column(db.String(255))
     #fk
     user_id = db.Column(db.String(36), db.ForeignKey('users.user_id'), nullable=False)
+    #relationship
+    user = relationship('Users', back_populates='task')

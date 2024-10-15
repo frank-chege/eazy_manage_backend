@@ -8,11 +8,12 @@ class validate_schema(Schema):
     firstName = fields.Str(required=False, validate=Length(min=2, max=50))
     lastName = fields.Str(required=False, validate=Length(min=2, max=50))
     email = fields.Email(required=True)
-    contact = fields.Str(required=False, validate=Length(min=10, max=15))
-    gender = fields.Str(required=False)
-    department = fields.Str(required=False)
-    jobTitle = fields.Str(required=False)
-    nationalId = fields.Int(required=False, validate=Length(max=20))
+    #contact = fields.Str(required=False, validate=Length(min=10, max=15))
+    #gender = fields.Str(required=False)
+    status = fields.Str(required=False, validate= lambda x : x in ['active', 'leave', 'inactive'])
+    department = fields.Str(required=False, validate= lambda x : x in ['ACCOUNTS', 'IT', 'HR'])
+    jobTitle = fields.Str(required=False, validate= lambda x : x in ['hr', 'developer', 'accountant'])
+    #nationalId = fields.Int(required=False, validate=Length(max=20))
     joined = fields.Date(required=False)
     password = fields.Str(required=False, validate=Length(min=6, max=16))
     auth_code = fields.Int(required=False, validate=Length(min=6, max=6))
@@ -29,10 +30,10 @@ class validate_schema(Schema):
     def validate_role_specific_fields(self, data, **kwargs):
         '''validate fields according to roles and activity'''
         if self.activity == 'login':
-            if not all(field for field in data for field in ['pwd', 'email']):
+            if not all(field for field in data for field in ['password', 'email']):
                 raise ValidationError('password/email missing')
         elif self.activity == 'register':
-            if not all(field for field in data for field in ['firstName', 'lastName', 'role', 'contact', 'status', 'gender', 'jobTitle', 'department']):
+            if not all(field for field in data for field in ['firstName', 'lastName', 'role', 'jobTitle', 'department']):
                 raise ValidationError('first/last name(s) missing')
         elif self.activity == 'get_reset_code':
             if not all(field for field in data for field in ['email']):
@@ -41,7 +42,7 @@ class validate_schema(Schema):
             if not all(field for field in data for field in ['reset_action']):
                 raise ValidationError('Invalid reset action')
         elif self.activity == 'reset_pwd':
-            if not all(field for field in data for field in ['auth_code', 'email', 'pwd']):
+            if not all(field for field in data for field in ['auth_code', 'email', 'password']):
                 raise ValidationError('Invalid code')
         elif self.activity == 'auth_status':
             if not all(field for field in data for field in ['role']):

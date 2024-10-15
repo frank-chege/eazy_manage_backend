@@ -59,13 +59,12 @@ def register():
         first_name = payload['firstName'],
         last_name = payload['lastName'],
         email = email,
-        contact = payload['contact'],
-        emergency_contact = payload.get('emergencyContact'),
-        gender = payload['gender'],
+        #contact = payload['contact'],
+        #gender = payload['gender'],
         status = payload.get('status'),
         department = payload['department'],
         job_title = payload['jobTitle'],
-        national_id = payload.get('nationalId'),
+        #national_id = payload.get('nationalId'),
         joined = payload.get('joined')
     )
     password = create_random_num()
@@ -87,7 +86,7 @@ def register():
     send_email(subject, recipients, body)
     return jsonify(
         {
-            'message': 'Regisration successful'
+            'message': 'Registration successful'
         }
     ), 201
 
@@ -115,8 +114,8 @@ def login():
             }
             ), 404
         
-        hashed_pwd = user['password']
-        role = user['role']
+        hashed_pwd = user.password
+        role = user.role
         #verify password
         if not user.check_pwd(password, hashed_pwd):
             return jsonify({
