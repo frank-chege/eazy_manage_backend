@@ -8,7 +8,7 @@ class Users(db.Model, Base_model):
     __tablename__ = 'users'
 
     user_id = db.Column(db.String(36), unique=True, primary_key=True)
-    role = db.Column(db.Enum('admin', 'user'), default='user', nullable=False)
+    role = db.Column(db.Enum('admin', 'employee'), default='employee', nullable=False)
     first_name = db.Column(db.String(255), nullable=False)
     last_name = db.Column(db.String(255), nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False)

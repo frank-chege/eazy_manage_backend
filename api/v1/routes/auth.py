@@ -45,24 +45,26 @@ def register():
         return jsonify({
             'error': validation_err
         }), 400
+    email = payload['email']
+    first_name = payload['firstName']
+    last_name = payload['lastName']
     #check if user exists
     user = db.session.query(Users).filter_by(email=email).first()
     if user:
         return jsonify({
-            'error': 'User already exists. Login instead'
+            'error': 'Employee already exists'
         }), 409
     #add new user
-    email = payload['email']
     new_user = Users(
         user_id = gen_uuid(),
         role = payload['role'],
-        first_name = payload['firstName'],
-        last_name = payload['lastName'],
+        first_name = first_name,
+        last_name = last_name,
         email = email,
         #contact = payload['contact'],
         #gender = payload['gender'],
         status = payload.get('status'),
-        department = payload['department'],
+        department = payload['dep'],
         job_title = payload['jobTitle'],
         #national_id = payload.get('nationalId'),
         joined = payload.get('joined')
@@ -86,7 +88,7 @@ def register():
     send_email(subject, recipients, body)
     return jsonify(
         {
-            'message': 'Registration successful'
+            'message': f'Successfully added employee {first_name, last_name}'
         }
     ), 201
 

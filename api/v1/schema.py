@@ -4,14 +4,14 @@ from marshmallow.validate import Length
 
 class validate_schema(Schema):
     '''validates input fields'''
-    role = fields.Str(required=False, validate= lambda x : x in ['admin', 'user'])
+    role = fields.Str(required=False, validate= lambda x : x in ['admin', 'employee'])
     firstName = fields.Str(required=False, validate=Length(min=2, max=50))
     lastName = fields.Str(required=False, validate=Length(min=2, max=50))
     email = fields.Email(required=True)
     #contact = fields.Str(required=False, validate=Length(min=10, max=15))
     #gender = fields.Str(required=False)
     status = fields.Str(required=False, validate= lambda x : x in ['active', 'leave', 'inactive'])
-    department = fields.Str(required=False, validate= lambda x : x in ['ACCOUNTS', 'IT', 'HR'])
+    dep = fields.Str(required=False, validate= lambda x : x in ['ACCOUNTS', 'IT', 'HR'])
     jobTitle = fields.Str(required=False, validate= lambda x : x in ['hr', 'developer', 'accountant'])
     #nationalId = fields.Int(required=False, validate=Length(max=20))
     joined = fields.Date(required=False)
