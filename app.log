@@ -1,544 +1,76 @@
-2024-10-15 22:41:15,557 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-15 22:41:15,558 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-15 22:41:15,558 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-15 22:41:16,097 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
-2024-10-15 22:41:16,097 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
-2024-10-15 22:41:16,251 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
-2024-10-15 22:41:16,256 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
-2024-10-15 22:41:16,263 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
-2024-10-15 22:41:16,264 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
-2024-10-15 22:41:16,264 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
-2024-10-15 22:48:03,405 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-15 22:48:03,405 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-15 22:48:03,607 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-15 22:48:03,611 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-15 22:48:03,623 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-15 22:48:03,623 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-15 22:48:03,624 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-15 22:48:28,000 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-15 22:48:28,001 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-15 22:48:28,124 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-15 22:48:28,133 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-15 22:48:28,146 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-15 22:48:28,147 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-15 22:48:28,147 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-15 22:48:46,171 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-15 22:48:46,172 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-15 22:48:46,379 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-15 22:48:46,386 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-15 22:48:46,396 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-15 22:48:46,397 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-15 22:48:46,397 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-15 22:49:12,054 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-15 22:49:12,054 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-15 22:49:12,100 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-15 22:49:12,103 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-15 22:49:12,109 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-15 22:49:12,109 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-15 22:49:12,110 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-15 22:49:31,858 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-15 22:49:31,858 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-15 22:49:32,033 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-15 22:49:32,036 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-15 22:49:32,042 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-15 22:49:32,043 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-15 22:49:32,043 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-15 22:56:22,687 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-15 22:56:22,688 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-15 22:56:22,893 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-15 22:56:22,895 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-15 22:56:22,899 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-15 22:56:22,899 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-15 22:56:22,899 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-15 23:38:44,713 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:53,585 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:53,700 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:53,876 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:56,221 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:56,375 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:56,544 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:56,742 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:56,892 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:57,055 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:57,241 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:57,430 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:57,564 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:57,646 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:57,810 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:57,889 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:58,007 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:58,233 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:58,350 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:58,499 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:38:58,686 ERROR Validation error on login: {'error': {'type': 'ValidationError', 'message': {'pwd': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 100
-2024-10-15 23:48:45,176 ERROR An error occured while logging in: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 125
-Traceback (most recent call last):
-  File "/home/frank/eazy_manage_backend/api/v1/routes/auth.py", line 110, in login
-    user = db.session.query(Users).filter_by(email=email).first()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 1683, in query
-    return self._proxied.query(*entities, **kwargs)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2896, in query
-    return self._query_cls(entities, self, **kwargs)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 275, in __init__
-    self._set_entities(entities)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 287, in _set_entities
-    self._raw_columns = [
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 288, in <listcomp>
-    coercions.expect(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/sql/coercions.py", line 389, in expect
-    insp._post_inspect
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 1252, in __get__
-    obj.__dict__[self.__name__] = result = self.fget(obj)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 2711, in _post_inspect
-    self._check_configure()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 2388, in _check_configure
-    _configure_registries({self.registry}, cascade=True)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 4203, in _configure_registries
-    _do_configure_registries(registries, cascade)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 4244, in _do_configure_registries
-    mapper._post_configure_properties()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/mapper.py", line 2405, in _post_configure_properties
-    prop.init()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/interfaces.py", line 579, in init
-    self.do_init()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/relationships.py", line 1647, in do_init
-    self._generate_backref()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/relationships.py", line 2135, in _generate_backref
-    self._add_reverse_property(self.back_populates)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/relationships.py", line 1580, in _add_reverse_property
-    raise sa_exc.InvalidRequestError(
-sqlalchemy.exc.InvalidRequestError: back_populates on relationship 'Users.task' refers to attribute 'Tasks.user_id' that is not a relationship.  The back_populates parameter should refer to the name of a relationship on the target class.
-2024-10-15 23:54:40,061 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-15 23:54:40,079 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-15 23:54:41,789 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-15 23:54:41,804 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-15 23:54:41,831 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-15 23:54:41,832 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-15 23:54:41,833 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-15 23:54:49,236 ERROR An error occured while logging in: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 125
-Traceback (most recent call last):
-  File "/home/frank/eazy_manage_backend/api/v1/routes/auth.py", line 117, in login
-    hashed_pwd = user['password']
-TypeError: 'Users' object is not subscriptable
-2024-10-15 23:55:54,751 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-15 23:55:54,760 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-15 23:55:55,138 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-15 23:55:55,140 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-15 23:55:55,144 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-15 23:55:55,144 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-15 23:55:55,144 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-15 23:56:02,830 ERROR An error occured while logging in: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 125
-Traceback (most recent call last):
-  File "/home/frank/eazy_manage_backend/api/v1/routes/auth.py", line 118, in login
-    role = user['role']
-TypeError: 'Users' object is not subscriptable
-2024-10-15 23:57:59,851 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-15 23:57:59,859 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-15 23:58:00,518 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-15 23:58:00,521 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-15 23:58:00,526 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-15 23:58:00,526 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-15 23:58:00,526 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-16 20:38:19,121 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-16 20:38:19,136 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-16 20:38:19,785 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-16 20:38:19,796 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-16 20:38:19,811 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-16 20:38:19,812 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-16 20:38:19,813 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-16 20:38:24,124 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-16 20:38:24,125 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-16 20:38:24,276 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-16 20:38:24,288 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-16 20:38:24,311 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-16 20:38:24,312 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-16 20:38:24,313 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-16 21:01:55,353 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-16 21:01:55,353 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-16 21:01:55,506 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-16 21:01:55,522 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-16 21:01:55,546 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-16 21:01:55,549 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-16 21:01:55,549 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-16 21:11:32,865 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-16 21:11:32,866 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-16 21:11:32,962 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-16 21:11:32,968 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-16 21:11:32,976 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-16 21:11:32,976 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-16 21:11:32,976 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 21:47:55,519 ERROR Schema error on register router, {'error': {'type': 'ValidationError', 'message': {'role': ['Invalid value.'], 'status': ['Invalid value.'], 'dep': ['Unknown field.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 44
-2024-10-17 21:50:13,237 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-17 21:50:13,238 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-17 21:50:13,503 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-17 21:50:13,513 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-17 21:50:13,526 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-17 21:50:13,526 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-17 21:50:13,526 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 21:50:55,158 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-17 21:50:55,159 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-17 21:50:55,321 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-17 21:50:55,334 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-17 21:50:55,355 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-17 21:50:55,356 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-17 21:50:55,357 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 21:51:15,724 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-17 21:51:15,724 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-17 21:51:15,812 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-17 21:51:15,817 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-17 21:51:15,823 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-17 21:51:15,824 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-17 21:51:15,824 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 21:52:15,477 ERROR Schema error on register router, {'error': {'type': 'ValidationError', 'message': {'role': ['Invalid value.'], 'status': ['Invalid value.'], 'dep': ['Invalid value.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 44
-2024-10-17 22:11:13,296 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-17 22:11:13,296 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-17 22:11:13,452 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-17 22:11:13,460 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-17 22:11:13,474 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-17 22:11:13,474 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-17 22:11:13,474 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 22:13:26,777 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-17 22:13:26,777 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-17 22:13:26,924 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-17 22:13:26,927 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-17 22:13:26,931 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-17 22:13:26,932 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-17 22:13:26,932 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 22:14:00,211 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-17 22:14:00,212 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-17 22:14:00,394 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-17 22:14:00,405 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-17 22:14:00,420 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-17 22:14:00,421 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-17 22:14:00,421 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 22:14:03,566 ERROR Registration failed: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 77
-Traceback (most recent call last):
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1970, in _exec_single_context
-    self.dialect.do_execute(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
-    cursor.execute(statement, parameters)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
-    result = self._query(query)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
-    conn.query(q)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
-    result.read()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
-    first_packet = self.connection._read_packet()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1265, "Data truncated for column 'role' at row 1")
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/frank/eazy_manage_backend/api/v1/routes/auth.py", line 74, in register
-    db.session.commit()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 597, in commit
-    return self._proxied.commit()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1972, in commit
-    trans.commit(_to_root=True)
-  File "<string>", line 2, in commit
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
-    ret_value = fn(self, *arg, **kw)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1257, in commit
-    self._prepare_impl()
-  File "<string>", line 2, in _prepare_impl
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
-    ret_value = fn(self, *arg, **kw)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1232, in _prepare_impl
-    self.session.flush()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4296, in flush
-    self._flush(objects)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4431, in _flush
-    with util.safe_reraise():
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
-    raise exc_value.with_traceback(exc_tb)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4392, in _flush
-    flush_context.execute()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
-    rec.execute(self)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
-    util.preloaded.orm_persistence.save_obj(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
-    _emit_insert_statements(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1048, in _emit_insert_statements
-    result = connection.execute(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
-    return meth(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 514, in _execute_on_connection
-    return connection._execute_clauseelement(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
-    ret = self._execute_context(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1849, in _execute_context
-    return self._exec_single_context(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1989, in _exec_single_context
-    self._handle_dbapi_exception(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2356, in _handle_dbapi_exception
-    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1970, in _exec_single_context
-    self.dialect.do_execute(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
-    cursor.execute(statement, parameters)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
-    result = self._query(query)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
-    conn.query(q)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
-    result.read()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
-    first_packet = self.connection._read_packet()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-sqlalchemy.exc.DataError: (pymysql.err.DataError) (1265, "Data truncated for column 'role' at row 1")
-[SQL: INSERT INTO users (user_id, `role`, first_name, last_name, email, status, department, job_title, joined, password) VALUES (%(user_id)s, %(role)s, %(first_name)s, %(last_name)s, %(email)s, %(status)s, %(department)s, %(job_title)s, %(joined)s, %(password)s)]
-[parameters: {'user_id': '329006c3-a3f2-46b3-93ce-c837e9d6d0ef', 'role': 'employee', 'first_name': 'ohn', 'last_name': 'oe', 'email': 'frankchege698@gmail.com', 'status': 'active', 'department': 'IT', 'job_title': 'developer', 'joined': '2024-10-17', 'password': b'$2b$12$R8JyArUHnTsF7C9ELV07E./Ps45KUgs5pLDbK9m4JohO2Pvuq/Nem'}]
-(Background on this error at: https://sqlalche.me/e/20/9h9h)
-2024-10-17 22:14:09,470 ERROR Registration failed: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 77
-Traceback (most recent call last):
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1970, in _exec_single_context
-    self.dialect.do_execute(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
-    cursor.execute(statement, parameters)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
-    result = self._query(query)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
-    conn.query(q)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
-    result.read()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
-    first_packet = self.connection._read_packet()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1265, "Data truncated for column 'role' at row 1")
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/frank/eazy_manage_backend/api/v1/routes/auth.py", line 74, in register
-    db.session.commit()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 597, in commit
-    return self._proxied.commit()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1972, in commit
-    trans.commit(_to_root=True)
-  File "<string>", line 2, in commit
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
-    ret_value = fn(self, *arg, **kw)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1257, in commit
-    self._prepare_impl()
-  File "<string>", line 2, in _prepare_impl
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
-    ret_value = fn(self, *arg, **kw)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1232, in _prepare_impl
-    self.session.flush()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4296, in flush
-    self._flush(objects)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4431, in _flush
-    with util.safe_reraise():
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
-    raise exc_value.with_traceback(exc_tb)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4392, in _flush
-    flush_context.execute()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
-    rec.execute(self)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
-    util.preloaded.orm_persistence.save_obj(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
-    _emit_insert_statements(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1048, in _emit_insert_statements
-    result = connection.execute(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
-    return meth(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 514, in _execute_on_connection
-    return connection._execute_clauseelement(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
-    ret = self._execute_context(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1849, in _execute_context
-    return self._exec_single_context(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1989, in _exec_single_context
-    self._handle_dbapi_exception(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2356, in _handle_dbapi_exception
-    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1970, in _exec_single_context
-    self.dialect.do_execute(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
-    cursor.execute(statement, parameters)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
-    result = self._query(query)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
-    conn.query(q)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
-    result.read()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
-    first_packet = self.connection._read_packet()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-sqlalchemy.exc.DataError: (pymysql.err.DataError) (1265, "Data truncated for column 'role' at row 1")
-[SQL: INSERT INTO users (user_id, `role`, first_name, last_name, email, status, department, job_title, joined, password) VALUES (%(user_id)s, %(role)s, %(first_name)s, %(last_name)s, %(email)s, %(status)s, %(department)s, %(job_title)s, %(joined)s, %(password)s)]
-[parameters: {'user_id': '66f65a72-1bbd-416a-b18f-6fdc79988302', 'role': 'employee', 'first_name': 'ohn', 'last_name': 'oe', 'email': 'frankchege698@gmail.com', 'status': 'active', 'department': 'IT', 'job_title': 'developer', 'joined': '2024-10-17', 'password': b'$2b$12$EWRE2P4rPobtGsfHdbyh..XfqcepmL.RPaZWLc7FuOw/25N8d.1NO'}]
-(Background on this error at: https://sqlalche.me/e/20/9h9h)
-2024-10-17 22:15:29,528 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-17 22:15:29,528 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-17 22:15:29,597 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-17 22:15:29,604 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-17 22:15:29,614 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-17 22:15:29,614 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-17 22:15:29,614 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 22:15:34,117 ERROR Registration failed: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 77
-2024-10-17 22:15:52,557 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-17 22:15:52,557 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-17 22:15:52,620 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-17 22:15:52,623 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-17 22:15:52,626 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-17 22:15:52,627 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-17 22:15:52,627 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 22:16:24,507 ERROR Registration failed: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 77
-Traceback (most recent call last):
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1970, in _exec_single_context
-    self.dialect.do_execute(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
-    cursor.execute(statement, parameters)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
-    result = self._query(query)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
-    conn.query(q)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
-    result.read()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
-    first_packet = self.connection._read_packet()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-pymysql.err.DataError: (1265, "Data truncated for column 'role' at row 1")
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/frank/eazy_manage_backend/api/v1/routes/auth.py", line 74, in register
-    db.session.commit()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 597, in commit
-    return self._proxied.commit()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1972, in commit
-    trans.commit(_to_root=True)
-  File "<string>", line 2, in commit
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
-    ret_value = fn(self, *arg, **kw)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1257, in commit
-    self._prepare_impl()
-  File "<string>", line 2, in _prepare_impl
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
-    ret_value = fn(self, *arg, **kw)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1232, in _prepare_impl
-    self.session.flush()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4296, in flush
-    self._flush(objects)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4431, in _flush
-    with util.safe_reraise():
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
-    raise exc_value.with_traceback(exc_tb)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4392, in _flush
-    flush_context.execute()
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
-    rec.execute(self)
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
-    util.preloaded.orm_persistence.save_obj(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
-    _emit_insert_statements(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1048, in _emit_insert_statements
-    result = connection.execute(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
-    return meth(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 514, in _execute_on_connection
-    return connection._execute_clauseelement(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
-    ret = self._execute_context(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1849, in _execute_context
-    return self._exec_single_context(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1989, in _exec_single_context
-    self._handle_dbapi_exception(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2356, in _handle_dbapi_exception
-    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1970, in _exec_single_context
-    self.dialect.do_execute(
-  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
-    cursor.execute(statement, parameters)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
-    result = self._query(query)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
-    conn.query(q)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
-    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
-    result.read()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
-    first_packet = self.connection._read_packet()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
-    packet.raise_for_error()
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
-    err.raise_mysql_exception(self._data)
-  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
-    raise errorclass(errno, errval)
-sqlalchemy.exc.DataError: (pymysql.err.DataError) (1265, "Data truncated for column 'role' at row 1")
-[SQL: INSERT INTO users (user_id, `role`, first_name, last_name, email, status, department, job_title, joined, password) VALUES (%(user_id)s, %(role)s, %(first_name)s, %(last_name)s, %(email)s, %(status)s, %(department)s, %(job_title)s, %(joined)s, %(password)s)]
-[parameters: {'user_id': '8f5c5618-67fa-40ff-b7be-140669bd10aa', 'role': 'employee', 'first_name': 'ohn', 'last_name': 'oe', 'email': 'frankchege698@gmail.com', 'status': 'active', 'department': 'IT', 'job_title': 'developer', 'joined': '2024-10-17', 'password': b'$2b$12$sfcWFZwCOKqwb7z2Ld7gieKUp.Xwh9TYCIpU85.uSf46H1dQHMeYK'}]
-(Background on this error at: https://sqlalche.me/e/20/9h9h)
-2024-10-17 22:22:07,279 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
-2024-10-17 22:22:07,279 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
-2024-10-17 22:22:07,902 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
-2024-10-17 22:22:07,903 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
-2024-10-17 22:22:07,913 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
-2024-10-17 22:22:07,914 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
-2024-10-17 22:22:07,914 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
-2024-10-17 22:26:51,012 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-17 22:26:51,013 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-17 22:26:51,131 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-17 22:26:51,134 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-17 22:26:51,137 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-17 22:26:51,138 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-17 22:26:51,138 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 22:33:27,967 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-17 22:33:27,967 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-17 22:33:28,453 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-17 22:33:28,456 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-17 22:33:28,460 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-17 22:33:28,460 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-17 22:33:28,460 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-17 22:34:04,516 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
-2024-10-17 22:34:04,516 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
-2024-10-17 22:34:05,293 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
-2024-10-17 22:34:05,294 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
-2024-10-17 22:34:05,307 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
-2024-10-17 22:34:05,308 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
-2024-10-17 22:34:05,309 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
-2024-10-17 22:36:43,242 ERROR Schema error on register router, {'error': {'type': 'ValidationError', 'message': {'role': ['Invalid value.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 44
-2024-10-17 22:36:54,289 ERROR Schema error on register router, {'error': {'type': 'ValidationError', 'message': {'role': ['Invalid value.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 44
-2024-10-17 22:41:04,751 ERROR Schema error on register router, {'error': {'type': 'ValidationError', 'message': {'role': ['Invalid value.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 44
+2024-10-18 20:41:26,327 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-18 20:41:26,389 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-18 20:41:26,392 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-18 20:41:26,396 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-18 20:41:26,396 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-18 20:41:26,397 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-18 22:09:47,012 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-18 22:09:47,023 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-18 22:09:47,337 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-18 22:09:47,342 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-18 22:09:47,348 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-18 22:09:47,349 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-18 22:09:47,349 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-18 22:17:04,825 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-18 22:17:04,825 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-18 22:17:05,076 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-18 22:17:05,086 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-18 22:17:05,099 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-18 22:17:05,099 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-18 22:17:05,099 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-18 22:18:30,986 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-18 22:18:30,986 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-18 22:18:31,187 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-18 22:18:31,192 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-18 22:18:31,197 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-18 22:18:31,197 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-18 22:18:31,197 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-18 23:00:10,270 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-18 23:00:10,270 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-18 23:00:10,560 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-18 23:00:10,570 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-18 23:00:10,591 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-18 23:00:10,592 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-18 23:00:10,593 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-18 23:00:57,145 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-18 23:00:57,145 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-18 23:00:57,390 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-18 23:00:57,394 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-18 23:00:57,398 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-18 23:00:57,398 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-18 23:00:57,399 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-18 23:02:42,383 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-18 23:02:42,383 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-18 23:02:42,461 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-18 23:02:42,464 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-18 23:02:42,470 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-18 23:02:42,470 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-18 23:02:42,470 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-18 23:04:20,852 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-18 23:04:20,853 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-18 23:04:21,035 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-18 23:04:21,054 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-18 23:04:21,077 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-18 23:04:21,078 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-18 23:04:21,078 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-18 23:07:01,637 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-18 23:07:01,637 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-18 23:07:01,873 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-18 23:07:01,880 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-18 23:07:01,892 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-18 23:07:01,893 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-18 23:07:01,894 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-18 23:13:49,814 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-18 23:13:49,814 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-18 23:13:49,969 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-18 23:13:49,976 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-18 23:13:49,990 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-18 23:13:49,990 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-18 23:13:49,991 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-19 00:09:49,701 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
+2024-10-19 00:09:49,701 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
+2024-10-19 00:09:50,881 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
+2024-10-19 00:09:50,882 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
+2024-10-19 00:09:50,894 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
+2024-10-19 00:09:50,895 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
+2024-10-19 00:09:50,895 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99

@@ -10,6 +10,7 @@ import os
 from werkzeug.utils import secure_filename
 from flask import current_app
 import random
+from flask_jwt_extended import get_jwt_identity
 
 executor = ThreadPoolExecutor() #to create a separate thread to send the email
 #set redis client
@@ -65,3 +66,8 @@ def pre_process_file(file, dir_name, username)->str:
 def create_random_num():
     '''creates a random password'''
     return str(random.randint(000000, 999999))
+
+def check_auth_status(request_role)->bool:
+        '''checks the auth status'''
+        identity = get_jwt_identity()
+        return identity.get('role') == request_role
