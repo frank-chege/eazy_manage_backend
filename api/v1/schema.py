@@ -1,9 +1,10 @@
 #validate data
-from marshmallow import Schema, fields, ValidationError, validates_schema
+from marshmallow import Schema, fields, ValidationError, validates_schema, validate
 from marshmallow.validate import Length
+from datetime import datetime
 
-class validate_schema(Schema):
-    '''validates input fields'''
+class auth_schema(Schema):
+    '''validates auth schema'''
     role = fields.Str(required=False, validate= lambda x : x in ['admin', 'employee'])
     firstName = fields.Str(required=False, validate=Length(min=2, max=50))
     lastName = fields.Str(required=False, validate=Length(min=2, max=50))
@@ -48,7 +49,14 @@ class validate_schema(Schema):
             if not all(field for field in data for field in ['role']):
                 raise ValidationError('Invalid role')
 
-        
+class task_schema(Schema):
+    '''validates tasks'''
+    task_name = fields.Str(required=True, validate=Length(min=5, max=255))
+    description = fields.Str(required=True, validate=Length(min=10, max=500))
+    team = fields.List(fields.Str(), required=True, validate=validate.Length(min=1))
+    started = fields.DateTime(required=True, validate= lambda x : x >= datetime.now())
+    to_end = fields.DateTime(required=True, validate= lambda x : x >= datetime.now())
+    priority = fields.Str(required=True, validate= validate.OneOf(['high', 'medium', 'low']))
     
 
 

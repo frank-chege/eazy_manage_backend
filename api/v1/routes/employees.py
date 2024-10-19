@@ -1,37 +1,61 @@
 '''employee routes'''
-from flask_jwt_extended import jwt_required
-from models.models import Users, db
+from flask_jwt_extended import jwt_required, get_jwt_identity
+from models.models import Users, db, Tasks
 from flask import (
     Blueprint,
     request,
     current_app,
     jsonify
 )
-from ..utils import(
-    check_auth_status
-)
+from ..schema import auth_schema, task_schema
+from ..utils import gen_uuid
 
 employees_bp = Blueprint('employees', __name__)
 
-@employees_bp.route('/get', methods=['GET'])
+@employees_bp.route('/get_tasks', methods=['GET'])
 @jwt_required()
-def get():
-    '''fetch all employees'''
-    if not check_auth_status('admin'):
-        return jsonify({
-            'error': 'Not authorized'
-        }), 403
+def get_tasks():
+    '''fetch all tasks'''
     offset = max(request.args.get('offset', 0, int), 0)
     limit = max(min(request.args.get('limit', 20, int), 100), 20)
+    identity = get_jwt_identity()
+    email = identity['email']
     try:
-        employees = db.session.query(Users).offset(offset).limit(limit).all()
-        if not employees:
+        tasks = db.session.query(Tasks).offset(offset).limit(limit).filter_by(email=email).all()
+        if not tasks:
             return jsonify({
-                'error': 'no employees found',
+                'error': 'no tasks found',
             }), 404
-        serialized_data = [employee.to_dict() for employee in employees]
+        serialized_data = [task.to_dict() for task in tasks]
     except:
-        current_app.logger.warning('Error fetching employees', exc_info=True)
+        current_app.logger.warning('Error fetching tasks', exc_info=True)
     return jsonify({
-        'employees': serialized_data
+        'tasks': serialized_data
     }), 200
+
+@employees_bp.route('/add_tasks', methods=['POST'])
+@jwt_required()
+def add_tasks():
+    '''add a new task'''
+    #validate schema
+    payload = request.get_json()
+    schema = task_schema()
+    validation_err = schema.load(payload)
+    if validation_err:
+        return jsonify({
+            'error': 'Invalid input'
+        }), 400
+    identity = get_jwt_identity()
+    email = identity['email']
+    new_task = Tasks(
+        task_id = gen_uuid(),
+        task_name = payload['taskName'],
+        description = payload['description'],
+        team = payload['team'],
+        started = payload['started'],
+        to_end = payload['toEnd'],
+        priority = payload['priority'],
+        status = 'pending',
+        user_id = ''
+    )
+

@@ -44,10 +44,10 @@ class Tasks(db.Model):
 
     task_id = db.Column(db.String(36), unique=True, primary_key=True)
     task_name = db.Column(db.String(255), nullable=False)
+    description = db.Column(db.String(500), nullable=False)
     team = db.Column(db.String(255), nullable=False)
-    description = db.Column(db.String(255), nullable=False)
     started = db.Column(db.DateTime)
-    planned_end_date = db.Column(db.Date)
+    to_end = db.Column(db.Date)
     ended = db.Column(db.DateTime)
     priority = db.Column(db.Enum('high', 'medium', 'low'), default='high')
     status = db.Column(db.Enum('pending', 'complete'), default='pending')

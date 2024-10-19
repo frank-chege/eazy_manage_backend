@@ -6,7 +6,7 @@ from flask_jwt_extended import (create_access_token,
                                 set_refresh_cookies,
                                 unset_jwt_cookies)
 from flask import request, jsonify, Blueprint, current_app, make_response
-from ..schema import validate_schema
+from ..schema import auth_schema
 from marshmallow import ValidationError
 from ..utils import (
     send_email,
@@ -22,7 +22,7 @@ auth_bp = Blueprint('auth', __name__)
 
 def check_schema(payload: dict, activity: str)->dict:
     '''validates the schema'''
-    schema = validate_schema(activity)
+    schema = auth_schema(activity)
     try:
         schema.load(payload)
         return True
