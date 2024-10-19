@@ -24,6 +24,21 @@ class Users(db.Model, Base_model):
     # relationships
     task = relationship('Tasks', back_populates='user')
 
+    def to_dict(self):
+        '''convert model to dictionary'''
+        return {
+            'user_id': self.user_id,
+            'role': self.role,
+            'first_name': self.first_name,
+            'last_name': self.last_name,
+            'email': self.email,
+            'status': self.status,
+            'department': self.department,
+            'job_title': self.job_title,
+            'joined': self.joined.strftime('%Y-%m-%d') if self.joined else None
+        }
+
+
 class Tasks(db.Model):
     __tablename__ = 'tasks'
 
@@ -42,3 +57,19 @@ class Tasks(db.Model):
     user_id = db.Column(db.String(36), db.ForeignKey('users.user_id'), nullable=False)
     #relationship
     user = relationship('Users', back_populates='task')
+
+    def to_dict(self)->dict:
+        '''return dict rep of the model'''
+        return {
+            'task_id': self.task_id,
+            'task_name': self.task_name,
+            'team': self.team,
+            'description': self.description,
+            'started': self.started.strftime('%Y-%m-%d %H:%M:%S') if self.started else None,  # Format datetime
+            'planned_end_date': self.planned_end_date.strftime('%Y-%m-%d') if self.planned_end_date else None,  # Format date
+            'ended': self.ended.strftime('%Y-%m-%d %H:%M:%S') if self.ended else None,  # Format datetime
+            'priority': self.priority,
+            'status': self.status,
+            'notes': self.notes,
+            'comments': self.comments,
+        }

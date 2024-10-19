@@ -24,13 +24,14 @@ def get():
     offset = max(request.args.get('offset', 0, int), 0)
     limit = max(min(request.args.get('limit', 20, int), 100), 20)
     try:
-        data = db.session.query(Users).offset(offset).limit(limit).all()
-        if not data:
+        employees = db.session.query(Users).offset(offset).limit(limit).all()
+        if not employees:
             return jsonify({
                 'error': 'no employees found',
             }), 404
+        serialized_data = [employee.to_dict() for employee in employees]
     except:
         current_app.logger.warning('Error fetching employees', exc_info=True)
     return jsonify({
-        'employees': data
+        'employees': serialized_data
     }), 200
