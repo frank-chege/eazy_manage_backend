@@ -20,7 +20,7 @@ from models.models import db, Tasks, Users
 
 auth_bp = Blueprint('auth', __name__)
 
-def check_schema(payload: dict, activity: str)->dict:
+def _check_schema(payload: dict, activity: str)->dict:
     '''validates the schema'''
     schema = auth_schema(activity)
     try:
@@ -39,7 +39,7 @@ def register():
     '''user registration endpoint'''
     payload = request.get_json()
     #validate payload
-    validation_err = check_schema(payload, 'register')
+    validation_err = _check_schema(payload, 'register')
     if validation_err is not True:
         current_app.logger.error(f'Schema error on register router, {validation_err}')
         return jsonify({
@@ -97,7 +97,7 @@ def login():
     '''user login endpoint'''
     payload = request.get_json()
     #validate payload
-    validation = check_schema(payload, 'login')
+    validation = _check_schema(payload, 'login')
     if validation is not True :
         current_app.logger.error(f'Validation error on login: {validation}')
         return jsonify({
@@ -136,7 +136,8 @@ def login():
     #create access tokens
     identity = {
         'email': email,
-        'role': role
+        'role': role,
+        'user_id': user.user_id
     }
     jwt_token = create_access_token(identity=identity)
     refresh_token = create_refresh_token(identity=identity)
@@ -149,7 +150,7 @@ def reset_pwd():
     '''reset the user password'''
     args = request.args
     #validate reset action
-    validation_err = check_schema(args, 'reset_action')
+    validation_err = _check_schema(args, 'reset_action')
     if validation_err:
         current_app.logger.error(f'Validation error on reset password: {validation_err}')
         return jsonify({
@@ -160,7 +161,7 @@ def reset_pwd():
     #send reset code
     if action == 'get_reset_code':
         #validate email
-        validation_err = check_schema(payload, 'get_reset_code')
+        validation_err = _check_schema(payload, 'get_reset_code')
         if validation_err:
             current_app.logger.error(f'Validation error on reset password: {validation_err}')
             return jsonify({
@@ -196,7 +197,7 @@ def reset_pwd():
         send_email(subject, recipients, body)
     #reset password
     else:
-        validation_err = check_schema(payload, 'reset_pwd')
+        validation_err = _check_schema(payload, 'reset_pwd')
         if validation_err:
             current_app.logger.error(f'Validation error on reset password: {validation_err}')
             return jsonify({
@@ -239,13 +240,15 @@ def reset_pwd():
 def auth_status():
     '''checks the auth status'''
     payload = request.get_json()
-    verified = check_schema(payload, 'auth_status')
+    verified = _check_schema(payload, 'auth_status')
     if not verified:
         return jsonify({'status': 'false'}), 403
     identity = get_jwt_identity()
     role = payload['role']
-    if role != identity['role']:
-        return jsonify({'status': 'false'}), 403
+    #verify admin
+    if role == 'admin':
+        if role != identity['role']:
+            return jsonify({'status': 'false'}), 403
     return jsonify({'status': 'true'}), 200
         
 @auth_bp.route('/logout', methods=['POST'])

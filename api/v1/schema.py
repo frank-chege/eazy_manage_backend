@@ -51,11 +51,11 @@ class auth_schema(Schema):
 
 class task_schema(Schema):
     '''validates tasks'''
-    task_name = fields.Str(required=True, validate=Length(min=5, max=255))
+    taskName = fields.Str(required=True, validate=Length(min=5, max=255))
     description = fields.Str(required=True, validate=Length(min=10, max=500))
-    team = fields.List(fields.Str(), required=True, validate=validate.Length(min=1))
+    #team = fields.List(fields.Str(), required=True, validate=validate.Length(min=1))
     started = fields.DateTime(required=True, validate= lambda x : x >= datetime.now())
-    to_end = fields.DateTime(required=True, validate= lambda x : x >= datetime.now())
+    toEnd = fields.Date(required=True, validate= lambda x : x >= datetime.now().date())
     priority = fields.Str(required=True, validate= validate.OneOf(['high', 'medium', 'low']))
     
 

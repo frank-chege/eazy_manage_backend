@@ -1,307 +1,137 @@
-2024-10-18 20:41:26,327 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-18 20:41:26,389 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-18 20:41:26,392 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-18 20:41:26,396 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-18 20:41:26,396 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-18 20:41:26,397 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-18 22:09:47,012 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-18 22:09:47,023 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-18 22:09:47,337 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-18 22:09:47,342 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-18 22:09:47,348 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-18 22:09:47,349 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-18 22:09:47,349 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-18 22:17:04,825 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-18 22:17:04,825 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-18 22:17:05,076 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-18 22:17:05,086 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-18 22:17:05,099 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-18 22:17:05,099 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-18 22:17:05,099 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-18 22:18:30,986 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-18 22:18:30,986 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-18 22:18:31,187 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-18 22:18:31,192 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-18 22:18:31,197 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-18 22:18:31,197 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-18 22:18:31,197 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-18 23:00:10,270 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-18 23:00:10,270 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-18 23:00:10,560 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-18 23:00:10,570 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-18 23:00:10,591 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-18 23:00:10,592 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-18 23:00:10,593 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-18 23:00:57,145 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-18 23:00:57,145 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-18 23:00:57,390 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-18 23:00:57,394 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-18 23:00:57,398 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-18 23:00:57,398 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-18 23:00:57,399 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-18 23:02:42,383 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-18 23:02:42,383 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-18 23:02:42,461 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-18 23:02:42,464 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-18 23:02:42,470 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-18 23:02:42,470 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-18 23:02:42,470 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-18 23:04:20,852 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-18 23:04:20,853 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-18 23:04:21,035 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-18 23:04:21,054 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-18 23:04:21,077 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-18 23:04:21,078 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-18 23:04:21,078 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-18 23:07:01,637 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-18 23:07:01,637 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-18 23:07:01,873 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-18 23:07:01,880 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-18 23:07:01,892 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-18 23:07:01,893 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-18 23:07:01,894 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-18 23:13:49,814 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-18 23:13:49,814 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-18 23:13:49,969 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-18 23:13:49,976 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-18 23:13:49,990 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-18 23:13:49,990 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-18 23:13:49,991 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 00:09:49,701 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
-2024-10-19 00:09:49,701 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
-2024-10-19 00:09:50,881 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
-2024-10-19 00:09:50,882 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
-2024-10-19 00:09:50,894 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
-2024-10-19 00:09:50,895 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
-2024-10-19 00:09:50,895 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
-2024-10-19 14:32:13,304 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 14:32:13,312 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 14:32:14,584 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 14:32:14,605 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 14:32:14,643 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 14:32:14,645 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 14:32:14,646 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 14:32:20,084 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 14:32:20,085 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 14:32:20,311 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 14:32:20,329 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 14:32:20,360 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 14:32:20,361 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 14:32:20,361 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 14:50:03,116 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 14:50:03,116 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 14:50:03,314 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 14:50:03,322 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 14:50:03,335 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 14:50:03,335 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 14:50:03,336 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 15:04:32,493 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 15:04:32,494 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 15:04:32,781 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 15:04:32,801 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 15:04:32,838 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 15:04:32,839 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 15:04:32,842 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 15:06:13,456 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 15:06:13,457 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 15:06:13,636 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 15:06:13,651 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 15:06:13,678 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 15:06:13,679 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 15:06:13,680 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 15:09:57,046 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 15:09:57,046 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 15:09:57,129 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 15:09:57,133 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 15:09:57,141 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 15:09:57,142 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 15:09:57,142 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 15:10:27,973 WARNING Error fetching employees: /home/frank/eazy_manage_backend/api/v1/routes/employees.py 34
+2024-10-20 15:39:03,292 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 15:39:03,305 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-20 16:19:34,268 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-20 16:19:34,269 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-20 16:19:34,597 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-20 16:19:34,611 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-20 16:19:34,638 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-20 16:19:34,639 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 16:19:34,639 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-20 16:22:26,572 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-20 16:22:26,573 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-20 16:22:26,869 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-20 16:22:26,890 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-20 16:22:26,934 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-20 16:22:26,936 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 16:22:26,939 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-20 16:23:22,794 WARNING Error fetching tasks: /home/frank/eazy_manage_backend/api/v1/routes/employees.py 32
 Traceback (most recent call last):
-  File "/home/frank/eazy_manage_backend/api/v1/routes/employees.py", line 32, in get
-    serialized_data = {employee.to_dict() for employee in employees}
-  File "/home/frank/eazy_manage_backend/api/v1/routes/employees.py", line 32, in <setcomp>
-    serialized_data = {employee.to_dict() for employee in employees}
-TypeError: unhashable type: 'dict'
-2024-10-19 15:10:28,217 WARNING Error fetching employees: /home/frank/eazy_manage_backend/api/v1/routes/employees.py 34
+  File "/home/frank/eazy_manage_backend/api/v1/routes/employees.py", line 25, in get_tasks
+    tasks = db.session.query(Tasks).offset(offset).limit(limit).filter(Tasks.user_id == user_id, Tasks.status == status).all()
+  File "<string>", line 2, in filter
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 280, in _generative
+    x = fn(self, *args, **kw)
+  File "<string>", line 2, in filter
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/base.py", line 302, in generate
+    assertion(self, fn.__name__)
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 442, in _no_limit_offset
+    raise sa_exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: Query.filter() being called on a Query which already has LIMIT or OFFSET applied.  Call filter() before limit() or offset() are applied.
+2024-10-20 16:23:47,573 WARNING Error fetching tasks: /home/frank/eazy_manage_backend/api/v1/routes/employees.py 32
 Traceback (most recent call last):
-  File "/home/frank/eazy_manage_backend/api/v1/routes/employees.py", line 32, in get
-    serialized_data = {employee.to_dict() for employee in employees}
-  File "/home/frank/eazy_manage_backend/api/v1/routes/employees.py", line 32, in <setcomp>
-    serialized_data = {employee.to_dict() for employee in employees}
-TypeError: unhashable type: 'dict'
-2024-10-19 15:25:58,642 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 15:25:58,642 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 15:25:58,718 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 15:25:58,723 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 15:25:58,731 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 15:25:58,732 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 15:25:58,732 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 16:30:19,409 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
-2024-10-19 16:30:19,410 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
-2024-10-19 16:30:19,439 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
-2024-10-19 16:30:19,440 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
-2024-10-19 16:30:19,453 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
-2024-10-19 16:30:19,454 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
-2024-10-19 16:30:19,454 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
-2024-10-19 20:12:59,251 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:12:59,252 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:13:00,132 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:13:00,138 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:13:00,150 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:13:00,151 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:13:00,151 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 20:28:58,533 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:28:58,534 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:28:58,920 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:28:58,931 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:28:58,953 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:28:58,954 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:28:58,954 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 20:29:01,813 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:29:01,814 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:29:02,046 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:29:02,058 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:29:02,080 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:29:02,081 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:29:02,081 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 20:30:49,522 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:30:49,523 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:30:49,625 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:30:49,630 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:30:49,650 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:30:49,651 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:30:49,651 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 20:30:57,659 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:30:57,659 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:30:57,768 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:30:57,773 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:30:57,783 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:30:57,784 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:30:57,784 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 20:31:13,835 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:31:13,836 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:31:13,927 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:31:13,932 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:31:13,943 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:31:13,943 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:31:13,943 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 20:31:42,091 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:31:42,092 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:31:42,191 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:31:42,197 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:31:42,207 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:31:42,208 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:31:42,208 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 20:33:18,448 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:33:18,450 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:33:18,676 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:33:18,691 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:33:18,724 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:33:18,724 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:33:18,725 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 20:35:27,280 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:35:27,280 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:35:27,387 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:35:27,394 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:35:27,410 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:35:27,411 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:35:27,411 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 20:37:47,537 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:37:47,538 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:37:47,717 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:37:47,723 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:37:47,733 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:37:47,733 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:37:47,733 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 20:38:01,647 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 20:38:01,649 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 20:38:01,908 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 20:38:01,915 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 20:38:01,928 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 20:38:01,929 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 20:38:01,929 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 21:16:14,721 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 21:16:14,722 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 21:16:14,893 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 21:16:14,897 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 21:16:14,906 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 21:16:14,906 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 21:16:14,907 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 21:45:40,849 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 21:45:40,850 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 21:45:41,099 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 21:45:41,105 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 21:45:41,118 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 21:45:41,118 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 21:45:41,119 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 21:45:41,957 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 21:45:41,957 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 21:45:42,125 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 21:45:42,131 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 21:45:42,143 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 21:45:42,143 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 21:45:42,143 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 21:46:48,271 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 21:46:48,271 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 21:46:48,570 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 21:46:48,576 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 21:46:48,589 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 21:46:48,589 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 21:46:48,590 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 21:46:49,424 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 21:46:49,425 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 21:46:49,471 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 21:46:49,473 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 21:46:49,479 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 21:46:49,479 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 21:46:49,479 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 21:47:10,640 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 21:47:10,641 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 21:47:10,793 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 21:47:10,798 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 21:47:10,812 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 21:47:10,813 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 21:47:10,813 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 21:49:22,391 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 21:49:22,392 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 21:49:22,473 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 21:49:22,476 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 21:49:22,483 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 21:49:22,483 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 21:49:22,483 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 22:53:05,166 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 22:53:05,167 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 22:53:05,417 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 22:53:05,420 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 22:53:05,427 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 22:53:05,427 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 22:53:05,428 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 22:59:49,264 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 22:59:49,264 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 22:59:49,451 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 22:59:49,459 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 22:59:49,470 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 22:59:49,470 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 22:59:49,470 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-19 23:01:30,555 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-19 23:01:30,555 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-19 23:01:30,712 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-19 23:01:30,716 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-19 23:01:30,724 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-19 23:01:30,724 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-19 23:01:30,725 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-20 00:41:34,368 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-20 00:41:34,368 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-20 00:41:34,538 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-20 00:41:34,542 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-20 00:41:34,554 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-20 00:41:34,554 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-20 00:41:34,554 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
-2024-10-20 00:41:35,392 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
-2024-10-20 00:41:35,392 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
-2024-10-20 00:41:35,497 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
-2024-10-20 00:41:35,500 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
-2024-10-20 00:41:35,506 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
-2024-10-20 00:41:35,506 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
-2024-10-20 00:41:35,506 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+  File "/home/frank/eazy_manage_backend/api/v1/routes/employees.py", line 25, in get_tasks
+    tasks = db.session.query(Tasks).offset(offset).limit(limit).filter(Tasks.user_id == user_id, Tasks.status == status).all()
+  File "<string>", line 2, in filter
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/sql/base.py", line 280, in _generative
+    x = fn(self, *args, **kw)
+  File "<string>", line 2, in filter
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/base.py", line 302, in generate
+    assertion(self, fn.__name__)
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 442, in _no_limit_offset
+    raise sa_exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: Query.filter() being called on a Query which already has LIMIT or OFFSET applied.  Call filter() before limit() or offset() are applied.
+2024-10-20 16:27:46,190 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-20 16:27:46,191 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-20 16:27:46,297 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-20 16:27:46,302 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-20 16:27:46,312 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-20 16:27:46,312 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 16:27:46,313 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-20 16:28:08,502 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-20 16:28:08,504 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-20 16:28:08,655 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-20 16:28:08,674 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-20 16:28:08,719 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-20 16:28:08,721 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 16:28:08,722 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-20 17:00:19,940 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-20 17:00:20,060 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-20 17:00:30,290 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-20 17:00:30,657 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-20 17:00:30,704 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-20 17:00:30,706 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 17:00:30,707 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-20 17:00:39,173 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-20 17:00:39,174 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-20 17:00:39,374 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-20 17:00:39,387 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-20 17:00:39,419 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-20 17:00:39,420 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 17:00:39,421 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-20 17:01:35,552 WARNING Error fetching tasks: /home/frank/eazy_manage_backend/api/v1/routes/employees.py 36
+Traceback (most recent call last):
+  File "/home/frank/eazy_manage_backend/api/v1/routes/employees.py", line 34, in get_tasks
+    serialized_data = [task.to_dict() for task in tasks]
+  File "/home/frank/eazy_manage_backend/api/v1/routes/employees.py", line 34, in <listcomp>
+    serialized_data = [task.to_dict() for task in tasks]
+  File "/home/frank/eazy_manage_backend/models/models.py", line 66, in to_dict
+    'team': self.team,
+AttributeError: 'Tasks' object has no attribute 'team'
+2024-10-20 17:02:45,331 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-20 17:02:45,333 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-20 17:02:45,548 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-20 17:02:45,562 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-20 17:02:45,595 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-20 17:02:45,597 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 17:02:45,598 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-20 17:03:39,585 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
+2024-10-20 17:03:39,586 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
+2024-10-20 17:03:39,747 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
+2024-10-20 17:03:39,756 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
+2024-10-20 17:03:39,781 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
+2024-10-20 17:03:39,782 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
+2024-10-20 17:03:39,782 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
+2024-10-20 17:03:50,670 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
+2024-10-20 17:03:50,671 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
+2024-10-20 17:03:50,826 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
+2024-10-20 17:03:50,839 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
+2024-10-20 17:03:50,869 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
+2024-10-20 17:03:50,870 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
+2024-10-20 17:03:50,871 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
+2024-10-20 17:04:10,106 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
+2024-10-20 17:04:10,107 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
+2024-10-20 17:04:10,283 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
+2024-10-20 17:04:10,295 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
+2024-10-20 17:04:10,322 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
+2024-10-20 17:04:10,323 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
+2024-10-20 17:04:10,324 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
+2024-10-20 17:08:46,735 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-20 17:08:46,736 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-20 17:08:46,947 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-20 17:08:46,960 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-20 17:08:46,989 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-20 17:08:46,990 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 17:08:46,991 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-20 17:08:57,555 WARNING Error fetching tasks: /home/frank/eazy_manage_backend/api/v1/routes/employees.py 37
+Traceback (most recent call last):
+  File "/home/frank/eazy_manage_backend/api/v1/routes/employees.py", line 35, in get_tasks
+    serialized_data = [task.to_dict() for task in tasks]
+  File "/home/frank/eazy_manage_backend/api/v1/routes/employees.py", line 35, in <listcomp>
+    serialized_data = [task.to_dict() for task in tasks]
+  File "/home/frank/eazy_manage_backend/models/models.py", line 69, in to_dict
+    'planned_end_date': self.planned_end_date.strftime('%Y-%m-%d') if self.planned_end_date else None,  # Format date
+AttributeError: 'Tasks' object has no attribute 'planned_end_date'
+2024-10-20 17:11:27,621 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-20 17:11:27,622 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-20 17:11:27,787 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-20 17:11:27,799 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-20 17:11:27,832 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-20 17:11:27,833 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 17:11:27,834 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-20 17:16:30,979 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-20 17:16:30,980 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-20 17:16:31,164 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-20 17:16:31,179 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-20 17:16:31,206 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-20 17:16:31,207 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-20 17:16:31,208 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99

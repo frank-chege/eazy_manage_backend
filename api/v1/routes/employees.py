@@ -8,7 +8,7 @@ from flask import (
     jsonify
 )
 from ..schema import auth_schema, task_schema
-from ..utils import gen_uuid
+from ..utils import gen_uuid, check_task_schema
 
 employees_bp = Blueprint('employees', __name__)
 
@@ -18,10 +18,15 @@ def get_tasks():
     '''fetch all tasks'''
     offset = max(request.args.get('offset', 0, int), 0)
     limit = max(min(request.args.get('limit', 20, int), 100), 20)
+    status = request.args.get('status', 'pending')
     identity = get_jwt_identity()
-    email = identity['email']
+    user_id = identity['user_id']
     try:
-        tasks = db.session.query(Tasks).offset(offset).limit(limit).filter_by(email=email).all()
+        tasks = db.session.query(Tasks)\
+        .filter(Tasks.user_id == user_id, Tasks.status == status)\
+        .offset(offset)\
+        .limit(limit)\
+            .all()
         if not tasks:
             return jsonify({
                 'error': 'no tasks found',
@@ -33,29 +38,39 @@ def get_tasks():
         'tasks': serialized_data
     }), 200
 
-@employees_bp.route('/add_tasks', methods=['POST'])
+@employees_bp.route('/add_new_task', methods=['POST'])
 @jwt_required()
-def add_tasks():
+def add_new_task():
     '''add a new task'''
     #validate schema
     payload = request.get_json()
-    schema = task_schema()
-    validation_err = schema.load(payload)
-    if validation_err:
+    validation_err = check_task_schema(payload)
+    if validation_err is not True:
         return jsonify({
-            'error': 'Invalid input'
+            'error': validation_err
         }), 400
     identity = get_jwt_identity()
-    email = identity['email']
     new_task = Tasks(
         task_id = gen_uuid(),
         task_name = payload['taskName'],
         description = payload['description'],
-        team = payload['team'],
+        #team = payload['team'],
         started = payload['started'],
         to_end = payload['toEnd'],
         priority = payload['priority'],
         status = 'pending',
-        user_id = ''
+        user_id = identity['user_id']
     )
+    try:
+        db.session.add(new_task)
+        db.session.commit()
+    except:
+        db.session.rollback()
+        current_app.logger.error('An error occured while adding a new task', exc_info=True)
+        return jsonify({
+            'error': 'An error occured please try again'
+        }), 500
+    return jsonify({
+        'message': 'New task added successfully'
+    }), 201
 

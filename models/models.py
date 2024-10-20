@@ -45,7 +45,7 @@ class Tasks(db.Model):
     task_id = db.Column(db.String(36), unique=True, primary_key=True)
     task_name = db.Column(db.String(255), nullable=False)
     description = db.Column(db.String(500), nullable=False)
-    team = db.Column(db.String(255), nullable=False)
+    #team = db.Column(db.String(255), nullable=False)
     started = db.Column(db.DateTime)
     to_end = db.Column(db.Date)
     ended = db.Column(db.DateTime)
@@ -63,10 +63,10 @@ class Tasks(db.Model):
         return {
             'task_id': self.task_id,
             'task_name': self.task_name,
-            'team': self.team,
+            #'team': self.team,
             'description': self.description,
             'started': self.started.strftime('%Y-%m-%d %H:%M:%S') if self.started else None,  # Format datetime
-            'planned_end_date': self.planned_end_date.strftime('%Y-%m-%d') if self.planned_end_date else None,  # Format date
+            'to_end': self.to_end.strftime('%Y-%m-%d') if self.to_end else None,  # Format date
             'ended': self.ended.strftime('%Y-%m-%d %H:%M:%S') if self.ended else None,  # Format datetime
             'priority': self.priority,
             'status': self.status,

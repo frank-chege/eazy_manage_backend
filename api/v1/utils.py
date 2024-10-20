@@ -11,6 +11,8 @@ from werkzeug.utils import secure_filename
 from flask import current_app
 import random
 from flask_jwt_extended import get_jwt_identity
+from .schema import task_schema
+from marshmallow import ValidationError
 
 executor = ThreadPoolExecutor() #to create a separate thread to send the email
 #set redis client
@@ -71,3 +73,17 @@ def check_auth_status(request_role)->bool:
         '''checks the auth status'''
         identity = get_jwt_identity()
         return identity.get('role') == request_role
+
+def check_task_schema(payload: dict):
+    '''check the shema'''
+    try:
+        schema = task_schema()
+        schema.load(payload)
+        return True
+    except ValidationError as err:
+        return {
+                'error':{
+                    'type': 'ValidationError',
+                    'message': err.messages
+                }
+            }
