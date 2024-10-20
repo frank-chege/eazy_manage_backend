@@ -51,12 +51,28 @@ class auth_schema(Schema):
 
 class task_schema(Schema):
     '''validates tasks'''
-    taskName = fields.Str(required=True, validate=Length(min=5, max=255))
-    description = fields.Str(required=True, validate=Length(min=10, max=500))
-    #team = fields.List(fields.Str(), required=True, validate=validate.Length(min=1))
-    started = fields.DateTime(required=True, validate= lambda x : x >= datetime.now())
-    toEnd = fields.Date(required=True, validate= lambda x : x >= datetime.now().date())
-    priority = fields.Str(required=True, validate= validate.OneOf(['high', 'medium', 'low']))
+    taskName = fields.Str(required=False, validate=Length(min=5, max=255))
+    description = fields.Str(required=False, validate=Length(min=10, max=500))
+    #team = fields.List(fields.Str(), required=False, validate=validate.Length(min=1))
+    started = fields.DateTime(required=False, validate= lambda x : x >= datetime.now())
+    toEnd = fields.Date(required=False, validate= lambda x : x >= datetime.now().date())
+    priority = fields.Str(required=False, validate= validate.OneOf(['high', 'medium', 'low']))
+    newStatus = fields.Str(required=False, validate=validate.OneOf(['pending', 'completed']))
+    taskId = fields.Str(required=False, validate=Length(max=36, min=36))
+
+    def __init__(self, activity: str):
+        self.activity = activity
+        super().__init__()
+    
+    @validates_schema
+    def validate_fields(self, data, **kwargs):
+        '''validate fields based on activity'''
+        if self.activity == 'add_new_task':
+            if not all(field for field in data for field in ['taskName', 'description', 'started', 'toEnd', 'priority']):
+                raise ValidationError('Missing input')
+        if self.activity == 'change_status':
+            if not all(field for field in data for field in ['newStatus', 'taskId']):
+                raise ValidationError('Incorrect payload')
     
 
 

@@ -50,7 +50,7 @@ class Tasks(db.Model):
     to_end = db.Column(db.Date)
     ended = db.Column(db.DateTime)
     priority = db.Column(db.Enum('high', 'medium', 'low'), default='high')
-    status = db.Column(db.Enum('pending', 'complete'), default='pending')
+    status = db.Column(db.Enum('pending', 'completed'), default='pending')
     notes = db.Column(db.String(255))
     comments = db.Column(db.String(255))
     #fk
