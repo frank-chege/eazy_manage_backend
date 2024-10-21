@@ -74,10 +74,10 @@ def check_auth_status(request_role)->bool:
         identity = get_jwt_identity()
         return identity.get('role') == request_role
 
-def check_task_schema(payload: dict, activity: str):
+def check_task_schema(payload: dict, activity: str, role: str):
     '''check the shema'''
     try:
-        schema = task_schema(activity)
+        schema = task_schema(activity, role)
         schema.load(payload)
         return True
     except ValidationError as err:

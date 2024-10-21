@@ -23,8 +23,14 @@ def get_employees():
         }), 403
     offset = max(request.args.get('offset', 0, int), 0)
     limit = max(min(request.args.get('limit', 20, int), 100), 20)
+    action = request.args.get('action')
     try:
-        employees = db.session.query(Users).offset(offset).limit(limit).all()
+        #fetch employees to assign tasks
+        if action == 'assign_task':
+            employees = db.session.query(Users.user_id, Users.first_name, Users.last_name, Users.email).offset(offset).limit(limit).all()
+        #normal fetching of employees
+        else:
+            employees = db.session.query(Users).offset(offset).limit(limit).all()
         if not employees:
             return jsonify({
                 'error': 'no employees found',

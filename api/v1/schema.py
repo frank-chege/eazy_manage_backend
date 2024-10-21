@@ -59,9 +59,11 @@ class task_schema(Schema):
     priority = fields.Str(required=False, validate= validate.OneOf(['high', 'medium', 'low']))
     newStatus = fields.Str(required=False, validate=validate.OneOf(['pending', 'completed']))
     taskId = fields.Str(required=False, validate=Length(max=36, min=36))
+    employeeId = fields.Str(required=False, validate=Length(max=36, min=36))
 
-    def __init__(self, activity: str):
+    def __init__(self, activity: str, role='employee'):
         self.activity = activity
+        self.role = role
         super().__init__()
     
     @validates_schema
@@ -70,6 +72,9 @@ class task_schema(Schema):
         if self.activity == 'add_new_task':
             if not all(field for field in data for field in ['taskName', 'description', 'started', 'toEnd', 'priority']):
                 raise ValidationError('Missing input')
+        if self.role == 'admin' and self.activity == 'add_new_task':
+            if not all(field for field in data for field in ['employeeId']):
+                raise ValidationError('Incorrect payload')
         if self.activity == 'change_status':
             if not all(field for field in data for field in ['newStatus', 'taskId']):
                 raise ValidationError('Incorrect payload')
