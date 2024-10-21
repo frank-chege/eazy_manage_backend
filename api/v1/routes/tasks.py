@@ -9,6 +9,7 @@ from flask import (
 )
 from ..schema import auth_schema, task_schema
 from ..utils import gen_uuid, check_task_schema, send_email
+from sqlalchemy import func
 
 tasks_bp = Blueprint('tasks', __name__)
 
@@ -22,10 +23,12 @@ def get_tasks():
     status = request.args.get('status', 'pending')
     identity = get_jwt_identity()
     role = identity['role']
+    serialized_data = []
+    total = 0
     try:
         #admin request
         if role == 'admin':
-            tasks = db.session.query(Tasks)\
+            tasks = db.session.query(func.count().over().label('total'),Tasks)\
             .filter(Tasks.status == status)\
             .offset(offset)\
             .limit(limit)\
@@ -33,7 +36,7 @@ def get_tasks():
         #employee request
         else:
             user_id = identity['user_id']
-            tasks = db.session.query(Tasks)\
+            tasks = db.session.query(func.count().over().label('total'),Tasks)\
             .filter(Tasks.user_id == user_id, Tasks.status == status)\
             .offset(offset)\
             .limit(limit)\
@@ -42,12 +45,16 @@ def get_tasks():
             return jsonify({
                 'error': 'no tasks found',
             }), 404
-        serialized_data = [task.to_dict() for task in tasks]
+        total = tasks[0].total
+        serialized_data = [task[1].to_dict() for task in tasks]
     except:
         current_app.logger.warning('Error fetching tasks', exc_info=True)
     return jsonify({
         'tasks': serialized_data,
-        'total': len(serialized_data)
+        'count': {
+            'page_count': len(serialized_data),
+            'total': total
+        }
     }), 200
 
 #add a new task
