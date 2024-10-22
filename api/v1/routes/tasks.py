@@ -9,7 +9,8 @@ from flask import (
 )
 from ..schema import auth_schema, task_schema
 from ..utils import gen_uuid, check_task_schema, send_email
-from sqlalchemy import func
+from sqlalchemy import func, and_
+import json
 
 tasks_bp = Blueprint('tasks', __name__)
 
@@ -21,6 +22,12 @@ def get_tasks():
     offset = max(request.args.get('offset', 0, int), 0)
     limit = max(min(request.args.get('limit', 20, int), 100), 20)
     status = request.args.get('status', 'pending')
+    filter = json.loads(request.args.get('filter'))
+    from_date = ''
+    to_date = ''
+    if filter:
+        from_date = filter.get('from')
+        to_date = filter.get('to')
     identity = get_jwt_identity()
     role = identity['role']
     serialized_data = []
@@ -29,7 +36,10 @@ def get_tasks():
         #admin request
         if role == 'admin':
             tasks = db.session.query(func.count().over().label('total'),Tasks)\
-            .filter(Tasks.status == status)\
+            .filter(Tasks.status == status, 
+                    and_(Tasks.started >= from_date, Tasks.started <= to_date) 
+                    if status == 'pending' else 
+                    and_(Tasks.ended >= from_date, Tasks.ended <= to_date))\
             .offset(offset)\
             .limit(limit)\
                 .all()
