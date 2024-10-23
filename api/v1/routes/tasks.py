@@ -23,10 +23,10 @@ def get_tasks():
     limit = max(min(request.args.get('limit', 20, int), 100), 20)
     status = request.args.get('status', 'pending')
     filter = json.loads(request.args.get('filter'))
-    from_date = ''
-    to_date = ''
+    from_date = None
+    to_date = None
     if filter:
-        from_date = filter.get('from')
+        from_date = filter.get('from') 
         to_date = filter.get('to')
     identity = get_jwt_identity()
     role = identity['role']
@@ -35,22 +35,19 @@ def get_tasks():
     try:
         #admin request
         if role == 'admin':
-            tasks = db.session.query(func.count().over().label('total'),Tasks)\
-            .filter(Tasks.status == status, 
-                    and_(Tasks.started >= from_date, Tasks.started <= to_date) 
-                    if status == 'pending' else 
-                    and_(Tasks.ended >= from_date, Tasks.ended <= to_date))\
-            .offset(offset)\
-            .limit(limit)\
-                .all()
+            query = db.session.query(func.count().over().label('total'),Tasks)\
+            .filter(Tasks.status == status)
         #employee request
         else:
             user_id = identity['user_id']
-            tasks = db.session.query(func.count().over().label('total'),Tasks)\
-            .filter(Tasks.user_id == user_id, Tasks.status == status)\
-            .offset(offset)\
-            .limit(limit)\
-                .all()
+            query = db.session.query(func.count().over().label('total'),Tasks)\
+            .filter(Tasks.user_id == user_id, Tasks.status == status)
+        if to_date and from_date:
+            query = query.filter((and_(Tasks.started >= from_date, Tasks.started <= to_date))\
+                    if status == 'pending' else\
+                    query.filter(and_(Tasks.ended >= from_date, Tasks.ended <= to_date)))
+        query = query.order_by(Tasks.started.desc()) if status == 'pending' else query.order_by(Tasks.ended.desc())
+        tasks = query.offset(offset).limit(limit).all()
         if not tasks:
             return jsonify({
                 'error': 'no tasks found',
