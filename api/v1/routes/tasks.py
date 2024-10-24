@@ -35,7 +35,8 @@ def get_tasks():
     try:
         #admin request
         if role == 'admin':
-            query = db.session.query(func.count().over().label('total'),Tasks)\
+            query = db.session.query(func.count().over().label('total'),Tasks, Users)\
+            .join(Users, Tasks.user_id == Users.user_id)\
             .filter(Tasks.status == status)
         #employee request
         else:
@@ -53,7 +54,17 @@ def get_tasks():
                 'error': 'no tasks found',
             }), 404
         total = tasks[0].total
-        serialized_data = [task[1].to_dict() for task in tasks]
+        user_data = lambda user : {
+            'first_name': user['first_name'],
+            'last_name': user['last_name']
+        }
+        serialized_data = [
+            {
+             **task[1].to_dict(),
+            'user': user_data(task[2].to_dict())
+        } if role == 'admin' else task[1].to_dict()
+            for task in tasks
+        ]
     except:
         current_app.logger.warning('Error fetching tasks', exc_info=True)
     return jsonify({
