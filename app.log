@@ -117,3 +117,208 @@ AttributeError: 'str' object has no attribute 'to_dict'
 2024-10-24 12:26:29,551 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
 2024-10-24 12:26:29,552 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
 2024-10-24 12:26:29,552 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-24 20:38:02,245 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-24 20:38:02,291 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-24 20:38:02,879 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-24 20:38:02,886 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-24 20:38:02,899 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-24 20:38:02,899 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-24 20:38:02,900 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-24 20:38:03,856 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-24 20:38:03,857 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-24 20:38:04,030 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-24 20:38:04,037 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-24 20:38:04,046 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-24 20:38:04,047 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-24 20:38:04,047 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-24 21:52:06,955 WARNING Error fetching tasks: /home/frank/eazy_manage_backend/api/v1/routes/tasks.py 69
+Traceback (most recent call last):
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1970, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1241, 'Operand should contain 1 column(s)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/frank/eazy_manage_backend/api/v1/routes/tasks.py", line 51, in get_tasks
+    tasks = query.offset(offset).limit(limit).all()
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2306, in execute
+    return self._execute_internal(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2191, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1849, in _execute_context
+    return self._exec_single_context(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1989, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2356, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1970, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1241, 'Operand should contain 1 column(s)')
+[SQL: SELECT count(*) OVER () AS total, tasks.task_id AS tasks_task_id, tasks.task_name AS tasks_task_name, tasks.description AS tasks_description, tasks.started AS tasks_started, tasks.to_end AS tasks_to_end, tasks.ended AS tasks_ended, tasks.priority AS tasks_priority, tasks.status AS tasks_status, tasks.notes AS tasks_notes, tasks.comments AS tasks_comments, tasks.user_id AS tasks_user_id 
+FROM tasks 
+WHERE tasks.user_id = %(user_id_1)s AND tasks.status = %(status_1)s AND (SELECT count(*) OVER () AS total, tasks.task_id, tasks.task_name, tasks.description, tasks.started, tasks.to_end, tasks.ended, tasks.priority, tasks.status, tasks.notes, tasks.comments, tasks.user_id 
+FROM tasks 
+WHERE tasks.user_id = %(user_id_1)s AND tasks.status = %(status_1)s AND tasks.ended >= %(ended_1)s AND tasks.ended <= %(ended_2)s) ORDER BY tasks.ended DESC 
+ LIMIT %(param_1)s, %(param_2)s]
+[parameters: {'user_id_1': '62a22a67-ee78-422e-b456-26d8a5963861', 'status_1': 'completed', 'ended_1': '2024-10-24', 'ended_2': '2024-10-31', 'param_1': 0, 'param_2': 20}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-10-24 21:52:12,598 WARNING Error fetching tasks: /home/frank/eazy_manage_backend/api/v1/routes/tasks.py 69
+Traceback (most recent call last):
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1970, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1241, 'Operand should contain 1 column(s)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/frank/eazy_manage_backend/api/v1/routes/tasks.py", line 51, in get_tasks
+    tasks = query.offset(offset).limit(limit).all()
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2306, in execute
+    return self._execute_internal(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2191, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/orm/context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1849, in _execute_context
+    return self._exec_single_context(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1989, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2356, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1970, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/frank/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/frank/.local/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1241, 'Operand should contain 1 column(s)')
+[SQL: SELECT count(*) OVER () AS total, tasks.task_id AS tasks_task_id, tasks.task_name AS tasks_task_name, tasks.description AS tasks_description, tasks.started AS tasks_started, tasks.to_end AS tasks_to_end, tasks.ended AS tasks_ended, tasks.priority AS tasks_priority, tasks.status AS tasks_status, tasks.notes AS tasks_notes, tasks.comments AS tasks_comments, tasks.user_id AS tasks_user_id 
+FROM tasks 
+WHERE tasks.user_id = %(user_id_1)s AND tasks.status = %(status_1)s AND (SELECT count(*) OVER () AS total, tasks.task_id, tasks.task_name, tasks.description, tasks.started, tasks.to_end, tasks.ended, tasks.priority, tasks.status, tasks.notes, tasks.comments, tasks.user_id 
+FROM tasks 
+WHERE tasks.user_id = %(user_id_1)s AND tasks.status = %(status_1)s AND tasks.ended >= %(ended_1)s AND tasks.ended <= %(ended_2)s) ORDER BY tasks.ended DESC 
+ LIMIT %(param_1)s, %(param_2)s]
+[parameters: {'user_id_1': '62a22a67-ee78-422e-b456-26d8a5963861', 'status_1': 'completed', 'ended_1': '2024-10-24', 'ended_2': '2024-10-31', 'param_1': 0, 'param_2': 20}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-10-24 22:51:13,314 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
+2024-10-24 22:51:13,315 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
+2024-10-24 22:51:14,107 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
+2024-10-24 22:51:14,108 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
+2024-10-24 22:51:14,129 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
+2024-10-24 22:51:14,130 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
+2024-10-24 22:51:14,130 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
+2024-10-24 23:34:30,196 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-24 23:34:30,489 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-24 23:34:38,198 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-24 23:34:38,264 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-24 23:34:38,357 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-24 23:34:38,358 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-24 23:34:38,364 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-24 23:34:43,405 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-24 23:34:43,407 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-24 23:34:43,589 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-24 23:34:43,600 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-24 23:34:43,623 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-24 23:34:43,623 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-24 23:34:43,624 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-24 23:40:23,200 ERROR Schema error on register router, {'error': {'type': 'ValidationError', 'message': {'status': ['Invalid value.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 44
+2024-10-24 23:40:53,917 ERROR Schema error on register router, {'error': {'type': 'ValidationError', 'message': {'status': ['Invalid value.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 44
+2024-10-24 23:41:06,671 ERROR Schema error on register router, {'error': {'type': 'ValidationError', 'message': {'status': ['Invalid value.']}}}: /home/frank/eazy_manage_backend/api/v1/routes/auth.py 44
+2024-10-24 23:41:17,890 INFO Logging setup successfully: /home/frank/eazy_manage_backend/app.py 43
+2024-10-24 23:41:17,891 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/app.py 55
+2024-10-24 23:41:17,925 INFO database set up successfully: /home/frank/eazy_manage_backend/app.py 60
+2024-10-24 23:41:17,926 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/app.py 68
+2024-10-24 23:41:17,947 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
+2024-10-24 23:41:17,948 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
+2024-10-24 23:41:17,949 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
