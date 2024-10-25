@@ -11,5 +11,4 @@ python-dotenv==1.0.1
 python_bcrypt==0.3.2
 redis==5.0.4
 SQLAlchemy==2.0.28
-SQLAlchemy==1.4.31
 Werkzeug==2.0.2
