@@ -14,9 +14,10 @@ from flask_cors import CORS
 from flask_jwt_extended import JWTManager
 from datetime import timedelta
 
-def create_app():
+app = Flask(__name__)
+
+def configure_app(app):
     '''create and configure app'''
-    app = Flask(__name__)
     load_dotenv()
     app.secret_key = os.getenv('APP_KEY')
 
@@ -95,7 +96,7 @@ def create_app():
 
 #create the app
 try:
-    app = create_app()
+    app = configure_app(app)
     app.logger.info('App created successfully')
 except:
     app.logger.critical(f'App was not created!',  exc_info=True)

@@ -7,7 +7,6 @@ from flask import (
     current_app,
     jsonify
 )
-from ..schema import auth_schema, task_schema
 from ..utils import gen_uuid, check_task_schema, send_email
 from sqlalchemy import func, and_
 import json
