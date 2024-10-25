@@ -9,6 +9,8 @@ flask_talisman
 marshmallow
 python-dotenv
 python_bcrypt
+PyMySQL
 redis
 SQLAlchemy
 Werkzeug
+
