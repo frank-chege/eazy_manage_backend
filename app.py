@@ -48,11 +48,8 @@ def configure_app(app):
 
     #set up database
     try:
-        db_pwd = os.getenv('DB_PASSWORD')
-        db_user = os.getenv('DB_USER')
-        db_host = os.getenv('DB_HOST')
-        app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{db_user}:{db_pwd}@{db_host}/eazy_manage'
-        app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+        db_uri = os.getenv('MYSQL_URL')  # Fetch the full database URI from environment variables
+        app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
         app.logger.info('DataBase set up successfully')
         db.init_app(app)
         #create the database
