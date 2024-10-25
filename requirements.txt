@@ -13,4 +13,4 @@ PyMySQL
 redis
 SQLAlchemy
 Werkzeug
-
+mysqlclient
