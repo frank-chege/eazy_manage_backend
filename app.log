@@ -322,3 +322,17 @@ WHERE tasks.user_id = %(user_id_1)s AND tasks.status = %(status_1)s AND tasks.en
 2024-10-24 23:41:17,947 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/app.py 76
 2024-10-24 23:41:17,948 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/app.py 89
 2024-10-24 23:41:17,949 INFO App created successfully: /home/frank/eazy_manage_backend/app.py 99
+2024-10-25 00:06:42,156 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-25 00:06:42,158 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-25 00:06:42,293 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-25 00:06:42,303 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-25 00:06:42,324 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-25 00:06:42,325 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-25 00:06:42,325 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
+2024-10-25 00:06:45,944 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 43
+2024-10-25 00:06:45,945 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 55
+2024-10-25 00:06:46,084 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 60
+2024-10-25 00:06:46,090 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 68
+2024-10-25 00:06:46,108 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 76
+2024-10-25 00:06:46,109 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 89
+2024-10-25 00:06:46,109 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 99
