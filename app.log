@@ -350,3 +350,75 @@ WHERE tasks.user_id = %(user_id_1)s AND tasks.status = %(status_1)s AND tasks.en
 2024-10-25 21:45:56,329 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 77
 2024-10-25 21:45:56,330 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 90
 2024-10-25 21:45:56,330 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 100
+2024-10-25 23:48:24,418 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 44
+2024-10-25 23:48:24,419 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 53
+2024-10-25 23:48:24,420 WARNING database set up failed!: /home/frank/eazy_manage_backend/./app.py 60
+Traceback (most recent call last):
+  File "/home/frank/eazy_manage_backend/./app.py", line 54, in configure_app
+    db.init_app(app)
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/flask_sqlalchemy/extension.py", line 355, in init_app
+    raise RuntimeError(
+RuntimeError: Either 'SQLALCHEMY_DATABASE_URI' or 'SQLALCHEMY_BINDS' must be set.
+2024-10-25 23:48:24,422 CRITICAL App was not created!: /home/frank/eazy_manage_backend/./app.py 99
+Traceback (most recent call last):
+  File "/home/frank/eazy_manage_backend/./app.py", line 96, in <module>
+    app = configure_app(app)
+  File "/home/frank/eazy_manage_backend/./app.py", line 54, in configure_app
+    db.init_app(app)
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/flask_sqlalchemy/extension.py", line 355, in init_app
+    raise RuntimeError(
+RuntimeError: Either 'SQLALCHEMY_DATABASE_URI' or 'SQLALCHEMY_BINDS' must be set.
+2024-10-25 23:48:52,852 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 44
+2024-10-25 23:48:52,852 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 56
+2024-10-25 23:48:52,887 WARNING database set up failed!: /home/frank/eazy_manage_backend/./app.py 63
+Traceback (most recent call last):
+  File "/home/frank/eazy_manage_backend/./app.py", line 57, in configure_app
+    db.init_app(app)
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/flask_sqlalchemy/extension.py", line 374, in init_app
+    engines[key] = self._make_engine(key, options, app)
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/flask_sqlalchemy/extension.py", line 665, in _make_engine
+    return sa.engine_from_config(options, prefix="")
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 820, in engine_from_config
+    return create_engine(url, **options)
+  File "<string>", line 2, in create_engine
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/sqlalchemy/util/deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 599, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/sqlalchemy/dialects/mysql/pymysql.py", line 75, in import_dbapi
+    return __import__("pymysql")
+ModuleNotFoundError: No module named 'pymysql'
+2024-10-25 23:48:52,889 CRITICAL App was not created!: /home/frank/eazy_manage_backend/./app.py 102
+Traceback (most recent call last):
+  File "/home/frank/eazy_manage_backend/./app.py", line 99, in <module>
+    app = configure_app(app)
+  File "/home/frank/eazy_manage_backend/./app.py", line 57, in configure_app
+    db.init_app(app)
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/flask_sqlalchemy/extension.py", line 374, in init_app
+    engines[key] = self._make_engine(key, options, app)
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/flask_sqlalchemy/extension.py", line 665, in _make_engine
+    return sa.engine_from_config(options, prefix="")
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 820, in engine_from_config
+    return create_engine(url, **options)
+  File "<string>", line 2, in create_engine
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/sqlalchemy/util/deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 599, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+  File "/home/frank/eazy_manage_backend/venv/lib/python3.10/site-packages/sqlalchemy/dialects/mysql/pymysql.py", line 75, in import_dbapi
+    return __import__("pymysql")
+ModuleNotFoundError: No module named 'pymysql'
+2024-10-25 23:49:21,959 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 44
+2024-10-25 23:49:21,960 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 56
+2024-10-25 23:49:22,054 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 61
+2024-10-25 23:49:22,060 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 69
+2024-10-25 23:49:22,074 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 77
+2024-10-25 23:49:22,074 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 90
+2024-10-25 23:49:22,075 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 100
+2024-10-25 23:49:24,149 INFO Logging setup successfully: /home/frank/eazy_manage_backend/./app.py 44
+2024-10-25 23:49:24,149 INFO DataBase set up successfully: /home/frank/eazy_manage_backend/./app.py 56
+2024-10-25 23:49:24,271 INFO database set up successfully: /home/frank/eazy_manage_backend/./app.py 61
+2024-10-25 23:49:24,277 INFO Migrations set up successfully: /home/frank/eazy_manage_backend/./app.py 69
+2024-10-25 23:49:24,290 INFO Blueprints registered successfully: /home/frank/eazy_manage_backend/./app.py 77
+2024-10-25 23:49:24,291 INFO Mail service setup successfully: /home/frank/eazy_manage_backend/./app.py 90
+2024-10-25 23:49:24,291 INFO App created successfully: /home/frank/eazy_manage_backend/./app.py 100
