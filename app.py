@@ -36,7 +36,7 @@ def configure_app(app):
     #serve the app over https only
     # talisman = Talisman(app, content_security_policy=None)
 
-    CORS(app, supports_credentials=True)
+    CORS(app, supports_credentials=True, origins=os.getenv('ALLOWED_ORIGINS'))
     
     #setup logging
     try:
