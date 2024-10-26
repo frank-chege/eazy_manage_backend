@@ -26,9 +26,9 @@ def configure_app(app):
     app.config['JWT_TOKEN_LOCATION'] = ['cookies']
     app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=2)
     app.config['JWT_REFRESH_TOKEN_EXPIRES'] = timedelta(days=1)
-    app.config['JWT_COOKIE_SECURE'] = False
-    #app.config['JWT_COOKIE_HTTPONLY'] = True
-    app.config['JWT_COOKIE_SAMESITE'] = 'Lax'
+    app.config['JWT_COOKIE_SECURE'] = True
+    app.config['JWT_COOKIE_HTTPONLY'] = True
+    app.config['JWT_COOKIE_SAMESITE'] = 'None'
     app.config['JWT_ACCESS_COOKIE_PATH'] = '/'
     app.config['JWT_COOKIE_CSRF_PROTECT'] = True
     JWTManager(app)
