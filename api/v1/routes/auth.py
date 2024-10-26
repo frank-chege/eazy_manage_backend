@@ -142,7 +142,7 @@ def login():
     }
     jwt_token = create_access_token(identity=identity)
     refresh_token = create_refresh_token(identity=identity)
-    csrf_token = get_csrf_token(access_token=True)
+    csrf_token = get_csrf_token(jwt_token)
     set_access_cookies(response, jwt_token)
     set_refresh_cookies(response, refresh_token)
     # Set a separate, readable CSRF token
