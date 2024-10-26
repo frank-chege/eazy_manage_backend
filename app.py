@@ -35,8 +35,7 @@ def configure_app(app):
 
     #serve the app over https only
     Talisman(app, content_security_policy=None)
-
-    CORS(app, supports_credentials=True, origins=os.getenv('ALLOWED_ORIGINS'))
+    CORS(app, supports_credentials=True, origins=['https://eazy-manage-frontend.vercel.app', 'http://localhost:5173'])
     
     #setup logging
     try:
