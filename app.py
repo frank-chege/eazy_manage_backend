@@ -48,8 +48,7 @@ def configure_app(app):
 
     #set up database
     try:
-        db_uri = os.getenv('MYSQL_URL')  # Fetch the full database URI from environment variables
-        app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
+        app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('MYSQL_URL')
         app.logger.info('DataBase set up successfully')
         db.init_app(app)
         #create the database
