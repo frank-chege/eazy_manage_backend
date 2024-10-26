@@ -4,7 +4,8 @@ from flask_jwt_extended import (create_access_token,
                                 create_refresh_token,
                                 set_access_cookies,
                                 set_refresh_cookies,
-                                unset_jwt_cookies)
+                                unset_jwt_cookies,
+                                get_csrf_token)
 from flask import request, jsonify, Blueprint, current_app, make_response
 from ..schema import auth_schema
 from marshmallow import ValidationError
@@ -141,8 +142,13 @@ def login():
     }
     jwt_token = create_access_token(identity=identity)
     refresh_token = create_refresh_token(identity=identity)
+    csrf_token = get_csrf_token(access_token=True)
     set_access_cookies(response, jwt_token)
     set_refresh_cookies(response, refresh_token)
+    # Set a separate, readable CSRF token
+    response.set_cookie(
+        'csrf_token', csrf_token, httponly=False, secure=True, samesite='None'
+    )
     return response, 200
 
 @auth_bp.route('/reset_pwd', methods=['GET', 'POST'])
