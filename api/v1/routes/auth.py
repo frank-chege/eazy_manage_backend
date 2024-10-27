@@ -142,13 +142,8 @@ def login():
     }
     jwt_token = create_access_token(identity=identity)
     refresh_token = create_refresh_token(identity=identity)
-    csrf_token = get_csrf_token(jwt_token)
     set_access_cookies(response, jwt_token)
     set_refresh_cookies(response, refresh_token)
-    # Set a separate, readable CSRF token
-    # response.set_cookie(
-    #     'csrf_token', csrf_token, domain='eazy-manage-frontend.vercel.app', httponly=False, secure=True, samesite='None'
-    # )
     return response, 200
 
 @auth_bp.route('/reset_pwd', methods=['GET', 'POST'])
