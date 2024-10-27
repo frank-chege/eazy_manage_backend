@@ -89,7 +89,7 @@ def register():
     send_email(subject, recipients, body)
     return jsonify(
         {
-            'message': f'Successfully added employee {first_name, last_name}'
+            'message': f'Successfully added employee {first_name} {last_name}'
         }
     ), 201
 

@@ -6,7 +6,7 @@ from flask import Flask
 from models.models import db
 from dotenv import load_dotenv
 import os
-from flask_migrate import Migrate
+from flask_migrate import Migrate, upgrade
 from flask_mail import Mail
 from log_conf import logger
 from flask_talisman import Talisman
@@ -26,10 +26,17 @@ def configure_app(app):
     app.config['JWT_TOKEN_LOCATION'] = ['cookies']
     app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=2)
     app.config['JWT_REFRESH_TOKEN_EXPIRES'] = timedelta(days=1)
-    app.config['JWT_COOKIE_SECURE'] = True
     app.config['JWT_COOKIE_HTTPONLY'] = True
-    app.config['JWT_COOKIE_SAMESITE'] = 'None'
     app.config['JWT_COOKIE_CSRF_PROTECT'] = True
+
+    #production
+    app.config['JWT_COOKIE_SECURE'] = True
+    app.config['JWT_COOKIE_SAMESITE'] = 'None'
+
+    # #local
+    # app.config['JWT_COOKIE_SECURE'] = False
+    # app.config['JWT_COOKIE_SAMESITE'] = 'Lax'
+
     JWTManager(app)
 
     #serve the app over https only
@@ -46,13 +53,22 @@ def configure_app(app):
 
     #set up database
     try:
+        #production
         app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('MYSQL_URL')
-        print(os.getenv('MYSQL_URL'))
+
+        # #local
+        # db_host = os.getenv('DB_HOST')
+        # db_user = os.getenv('DB_USER')
+        # db_password = os.getenv('DB_PASSWORD')
+        # db_name = os.getenv('DB_NAME')
+        # app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}'
+
         app.logger.info('DataBase set up successfully')
         db.init_app(app)
         #create the database
         with app.app_context():
             db.create_all()
+            #upgrade()
         app.logger.info('database set up successfully')
     except:
         app.logger.warning(f'database set up failed!', exc_info=True)
@@ -98,5 +114,8 @@ except:
     raise
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
-    #port=443, ssl_context=('cert.pem', 'key.pem')
+    #production
+    app.run(host='0.0.0.0')
+
+    #local
+    #app.run(host='0.0.0.0', debug=True)

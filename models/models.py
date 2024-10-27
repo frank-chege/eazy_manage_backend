@@ -16,7 +16,7 @@ class Users(db.Model, Base_model):
     #gender = db.Column(db.Enum('male', 'female', 'trans', 'other'), nullable=False)
     status = db.Column(db.Enum('active', 'leave', 'inactive'), default='active')
     department = db.Column(db.Enum('ACCOUNTS', 'IT', 'HR'), nullable=False)
-    job_title = db.Column(db.Enum('hr', 'developer', 'accoutant'), nullable=False)
+    job_title = db.Column(db.Enum('hr', 'developer', 'accountant'), nullable=False)
     #national_id = db.Column(db.Integer, unique=True, nullable=True)
     joined = db.Column(db.Date, nullable=True)
     password = db.Column(db.String(255), nullable=False)

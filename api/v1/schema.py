@@ -54,7 +54,7 @@ class task_schema(Schema):
     taskName = fields.Str(required=False, validate=Length(min=5, max=255))
     description = fields.Str(required=False, validate=Length(min=10, max=500))
     #team = fields.List(fields.Str(), required=False, validate=validate.Length(min=1))
-    started = fields.DateTime(required=False, validate= lambda x : x >= datetime.now())
+    started = fields.DateTime(required=False)
     toEnd = fields.Date(required=False, validate= lambda x : x >= datetime.now().date())
     priority = fields.Str(required=False, validate= validate.OneOf(['high', 'medium', 'low']))
     newStatus = fields.Str(required=False, validate=validate.OneOf(['pending', 'completed']))
