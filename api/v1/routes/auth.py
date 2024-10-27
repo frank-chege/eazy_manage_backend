@@ -147,7 +147,7 @@ def login():
     set_refresh_cookies(response, refresh_token)
     # Set a separate, readable CSRF token
     response.set_cookie(
-        'csrf_token', csrf_token, domain='eazy-manage-frontend.vercel.app', httponly=False, secure=True, samesite='None'
+        'csrf_token', csrf_token, domain='eazymanagebackend-production.up.railway.app', httponly=False, secure=True, samesite='None'
     )
     return response, 200
 
