@@ -136,8 +136,8 @@ def login():
         'user_id': user.user_id
     }
     jwt_token = create_access_token(identity=identity)
-    refresh_token = create_refresh_token(identity=identity)
     csrf_token = get_csrf_token(jwt_token)
+    refresh_token = create_refresh_token(identity=identity)
     #create response
     response = make_response({
     'role': role,
