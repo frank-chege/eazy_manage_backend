@@ -146,9 +146,9 @@ def login():
     set_access_cookies(response, jwt_token)
     set_refresh_cookies(response, refresh_token)
     # Set a separate, readable CSRF token
-    response.set_cookie(
-        'csrf_token', csrf_token, domain='eazymanagebackend-production.up.railway.app', httponly=False, secure=True, samesite='None'
-    )
+    # response.set_cookie(
+    #     'csrf_token', csrf_token, domain='eazy-manage-frontend.vercel.app', httponly=False, secure=True, samesite='None'
+    # )
     return response, 200
 
 @auth_bp.route('/reset_pwd', methods=['GET', 'POST'])
