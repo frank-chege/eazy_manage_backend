@@ -129,11 +129,6 @@ def login():
         return jsonify({
             'error': 'An error occured! Please try again'
         }), 500
-    #create response
-    response = make_response({
-    'role': role,
-    'message': 'Login successful',
-    })
     #create access tokens
     identity = {
         'email': email,
@@ -142,6 +137,13 @@ def login():
     }
     jwt_token = create_access_token(identity=identity)
     refresh_token = create_refresh_token(identity=identity)
+    csrf_token = get_csrf_token(jwt_token)
+    #create response
+    response = make_response({
+    'role': role,
+    'token': csrf_token,
+    'message': 'Login successful',
+    })
     set_access_cookies(response, jwt_token)
     set_refresh_cookies(response, refresh_token)
     return response, 200

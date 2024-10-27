@@ -29,7 +29,7 @@ def configure_app(app):
     app.config['JWT_COOKIE_SECURE'] = True
     app.config['JWT_COOKIE_HTTPONLY'] = True
     app.config['JWT_COOKIE_SAMESITE'] = 'None'
-    #app.config['JWT_COOKIE_CSRF_PROTECT'] = True
+    app.config['JWT_COOKIE_CSRF_PROTECT'] = True
     JWTManager(app)
 
     #serve the app over https only
