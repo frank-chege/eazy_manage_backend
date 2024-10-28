@@ -263,7 +263,7 @@ def logout():
         'status': 'true'
         })
     unset_jwt_cookies(response)
-    response.delete_cookie('csrf_token')
+    response.set_cookie('csrf_token', '', expires=0)
     return response, 200
 
 @auth_bp.route('/refresh_token', methods=['POST'])
