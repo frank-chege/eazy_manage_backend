@@ -36,6 +36,7 @@ def _check_schema(payload: dict, activity: str)->dict:
             }
 
 @auth_bp.route('/register', methods=['POST'])
+@jwt_required()
 def register():
     '''user registration endpoint'''
     payload = request.get_json()
@@ -262,6 +263,7 @@ def logout():
         'status': 'true'
         })
     unset_jwt_cookies(response)
+    response.delete_cookie('csrf_token')
     return response, 200
 
 @auth_bp.route('/refresh_token', methods=['POST'])
