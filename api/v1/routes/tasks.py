@@ -10,6 +10,7 @@ from flask import (
 from ..utils import gen_uuid, check_task_schema, send_email
 from sqlalchemy import func, and_
 import json
+from datetime import datetime, timedelta
 
 tasks_bp = Blueprint('tasks', __name__)
 
@@ -18,8 +19,13 @@ tasks_bp = Blueprint('tasks', __name__)
 @jwt_required()
 def get_tasks():
     '''fetch all tasks'''
-    offset = max(request.args.get('offset', 0, int), 0)
-    limit = max(min(request.args.get('limit', 20, int), 100), 20)
+    pagination = json.loads(request.args.get('pagination'))
+    if pagination:
+        offset = max(int(pagination.get('offset', 0)), 0)
+        limit = max(min(int(pagination.get('limit', 20)), 100), 20)
+    else:
+        offset = 0
+        limit = 20
     status = request.args.get('status', 'pending')
     filter = json.loads(request.args.get('filter'))
     from_date = None
@@ -27,6 +33,7 @@ def get_tasks():
     if filter:
         from_date = filter.get('from') 
         to_date = filter.get('to')
+        filter_user_id = filter.get('employeeId')
     identity = get_jwt_identity()
     role = identity['role']
     serialized_data = []
@@ -37,15 +44,20 @@ def get_tasks():
             query = db.session.query(func.count().over().label('total'),Tasks, Users)\
             .join(Users, Tasks.user_id == Users.user_id)\
             .filter(Tasks.status == status)
+            #filter by employee
+            if filter_user_id:
+                query = query.filter(Tasks.user_id == filter_user_id)
         #employee request
         else:
             user_id = identity['user_id']
             query = db.session.query(func.count().over().label('total'),Tasks)\
             .filter(Tasks.user_id == user_id, Tasks.status == status)
+        #filter by date
         if to_date and from_date:
-            query = query.filter((and_(Tasks.started >= from_date, Tasks.started <= to_date))\
+            formated_to_date = datetime.strptime(to_date, '%Y-%m-%d')
+            query = query.filter((and_(Tasks.started >= from_date, Tasks.started < (formated_to_date + timedelta(days=1))))\
                     if status == 'pending' else\
-                    query.filter(and_(Tasks.ended >= from_date, Tasks.ended <= to_date)))
+                    query.filter(and_(Tasks.ended >= from_date, Tasks.ended < (formated_to_date + timedelta(days=1)))))
         query = query.order_by(Tasks.started.desc()) if status == 'pending' else query.order_by(Tasks.ended.desc())
         tasks = query.offset(offset).limit(limit).all()
         if not tasks:
@@ -156,6 +168,10 @@ def change_task_status():
     #update task status
     try:
         task.status = new_status
+        if new_status == 'completed':
+            task.ended = datetime.now()
+        else:
+            task.ended = None
         db.session.commit()
     except:
         db.session.rollback()

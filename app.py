@@ -29,7 +29,7 @@ def configure_app(app):
     app.config['JWT_COOKIE_HTTPONLY'] = True
     app.config['JWT_COOKIE_CSRF_PROTECT'] = True
 
-    #production
+    # #production
     app.config['JWT_COOKIE_SECURE'] = True
     app.config['JWT_COOKIE_SAMESITE'] = 'None'
 
@@ -39,7 +39,7 @@ def configure_app(app):
 
     JWTManager(app)
 
-    #serve the app over https only
+    # #serve the app over https only
     Talisman(app, content_security_policy=None)
     CORS(app, supports_credentials=True, origins=['https://eazy-manage-frontend.vercel.app', 'http://localhost:5173'])
     
@@ -53,7 +53,7 @@ def configure_app(app):
 
     #set up database
     try:
-        #production
+        # #production
         app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('MYSQL_URL')
 
         # #local
@@ -114,7 +114,7 @@ except:
     raise
 
 if __name__ == '__main__':
-    #production
+    # #production
     app.run(host='0.0.0.0')
 
     #local
