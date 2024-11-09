@@ -1,4 +1,1 @@
-<h1>WELCOME TO EAZY_MANAGE</h1>
-<p>
-    An employee management app to track task completion.
-</p>
+    An employee management app to track task completion and increase productivity in the organization. Built with Python flask, mysql and redis.

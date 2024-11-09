@@ -13,10 +13,14 @@ import random
 from flask_jwt_extended import get_jwt_identity
 from .schema import task_schema
 from marshmallow import ValidationError
+from dotenv import load_dotenv
 
 executor = ThreadPoolExecutor() #to create a separate thread to send the email
 #set redis client
-redis_client = redis.StrictRedis(host='localhost', port=6379, db=0)
+load_dotenv()
+redis_host = os.getenv('REDISHOST')
+redis_port = os.getenv('REDISPORT')
+redis_client = redis.StrictRedis(host=redis_host, port=redis_port, db=0)
 
 #async email function
 def send_async_mail(app, msg: Mail):
