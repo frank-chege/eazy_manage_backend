@@ -36,6 +36,7 @@ def get_tasks():
         filter_user_id = filter.get('employeeId')
     identity = get_jwt_identity()
     role = identity['role']
+    org_id = identity['org_id']
     serialized_data = []
     total = 0
     try:
@@ -52,6 +53,8 @@ def get_tasks():
             user_id = identity['user_id']
             query = db.session.query(func.count().over().label('total'),Tasks)\
             .filter(Tasks.user_id == user_id, Tasks.status == status)
+        #filter by organization
+        query = query.filter(Tasks.org_id == org_id)
         #filter by date
         if to_date and from_date:
             formated_to_date = datetime.strptime(to_date, '%Y-%m-%d')
@@ -116,7 +119,8 @@ def new_task():
         to_end = payload['toEnd'],
         priority = payload['priority'],
         status = 'pending',
-        user_id = employee_id if role == 'admin' else identity['user_id']
+        user_id = employee_id if role == 'admin' else identity['user_id'],
+        org_id = identity['org_id']
     )
     try:
         db.session.add(new_task)

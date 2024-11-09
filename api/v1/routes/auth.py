@@ -6,8 +6,8 @@ from flask_jwt_extended import (create_access_token,
                                 set_refresh_cookies,
                                 unset_jwt_cookies,
                                 get_csrf_token)
-from flask import request, jsonify, Blueprint, current_app, make_response
-from ..schema import auth_schema
+from flask import request, jsonify, Blueprint, current_app, make_response, redirect, url_for, session
+from ..schema import auth_schema, org_schema
 from marshmallow import ValidationError
 from ..utils import (
     send_email,
@@ -17,80 +17,66 @@ from ..utils import (
     redis_client,
     gen_uuid
 )
-from models.models import db, Tasks, Users
+from models.models import db, Tasks, Users, Organizations
+from datetime import datetime
+import json
 
 auth_bp = Blueprint('auth', __name__)
 
-def _check_schema(payload: dict, activity: str)->dict:
-    '''validates the schema'''
-    schema = auth_schema(activity)
-    try:
-        schema.load(payload)
-        return True
-    except ValidationError as err:
-        return {
-                'error':{
-                    'type': 'ValidationError',
-                    'message': err.messages
-                }
-            }
-
-@auth_bp.route('/register', methods=['POST'])
-@jwt_required()
-def register():
-    '''user registration endpoint'''
+@auth_bp.route('/register/org', methods=['POST'])
+def register_org():
+    '''registers an organization'''
     payload = request.get_json()
     #validate payload
-    validation_err = _check_schema(payload, 'register')
-    if validation_err is not True:
-        current_app.logger.error(f'Schema error on register router, {validation_err}')
+    schema = org_schema()
+    try:
+        new_org_data = schema.load(payload)
+    except ValidationError as err:
+        current_app.logger.error(f'Schema error on register router, {err}')
         return jsonify({
-            'error': validation_err
+            'error': err
         }), 400
     email = payload['email']
-    first_name = payload['firstName']
-    last_name = payload['lastName']
-    #check if user exists
-    user = db.session.query(Users).filter_by(email=email).first()
-    if user:
+    org = db.session.query(Organizations).filter_by(email=email).first()
+    if org:
         return jsonify({
-            'error': 'Employee already exists'
+            'error': 'Organization already exists'
         }), 409
-    #add new user
-    new_user = Users(
+    #create new org
+    org_id = gen_uuid()
+    new_org_data['org_id'] = org_id
+    new_org_data['account_type'] = 'free' #initial account type
+    new_org_data['joined'] = datetime.now()
+    new_org = Organizations(**new_org_data)
+    #create a super admin account in the users table
+    super_admin = Users(
         user_id = gen_uuid(),
-        role = payload['role'],
-        first_name = first_name,
-        last_name = last_name,
+        org_id = org_id,
         email = email,
-        #contact = payload['contact'],
-        #gender = payload['gender'],
-        status = payload.get('status'),
-        department = payload['dep'],
-        job_title = payload['jobTitle'],
-        #national_id = payload.get('nationalId'),
-        joined = payload.get('joined')
+        role = 'admin',
+        joined = datetime.now()
     )
     password = create_random_num()
-    new_user.set_pwd(password)
+    super_admin.set_pwd(password)
     try:
-        db.session.add(new_user)
+        db.session.add(new_org)
+        db.session.add(super_admin)
         db.session.commit()
     except:
         db.session.rollback()
-        current_app.logger.error(f'Registration failed', exc_info=True)
+        current_app.logger.error(f'Organization registration failed', exc_info=True)
         return jsonify({
             'error': 'An error occured. Please try again'
         }), 500
     #send email
-    body = f'You have successfully been registered as an employee at Development dynamics\
-        Your one time password is {password}. You is to access your account and set your preffered one.'
-    subject = 'Development Dynamics registration'
+    body = f'Thank you for registering with us. To continue, login with your email and this one time password\n\
+        {password}.'
+    subject = 'Eazymanager registration'
     recipients = [email]
     send_email(subject, recipients, body)
     return jsonify(
         {
-            'message': f'Successfully added employee {first_name} {last_name}'
+            'message': f'Registration successful. Please check your email to continue.'
         }
     ), 201
 
@@ -99,13 +85,14 @@ def login():
     '''user login endpoint'''
     payload = request.get_json()
     #validate payload
-    validation = _check_schema(payload, 'login')
-    if validation is not True :
-        current_app.logger.error(f'Validation error on login: {validation}')
+    schema = auth_schema('login')
+    try:
+        schema.load(payload)
+    except ValidationError as err:
+        current_app.logger.error(f'Schema error on login, {err}')
         return jsonify({
-            'error': 'Invalid input. Please try again'
+            'error': 'Invalid email or password'
         }), 400
-    
     #verify login credentials
     email = payload['email']
     password = payload['password']
@@ -134,7 +121,8 @@ def login():
     identity = {
         'email': email,
         'role': role,
-        'user_id': user.user_id
+        'user_id': user.user_id,
+        'org_id': user.org_id,
     }
     jwt_token = create_access_token(identity=identity)
     csrf_token = get_csrf_token(jwt_token)
@@ -149,32 +137,43 @@ def login():
     set_refresh_cookies(response, refresh_token)
     return response, 200
 
-@auth_bp.route('/reset_pwd', methods=['GET', 'POST'])
-def reset_pwd():
-    '''reset the user password'''
-    args = request.args
-    #validate reset action
-    validation_err = _check_schema(args, 'reset_action')
-    if validation_err:
-        current_app.logger.error(f'Validation error on reset password: {validation_err}')
-        return jsonify({
-            'error': 'Invalid reset action! Please try again'
-            }), 400
-    action = args['action']
-    payload = request.get_json()
-    #send reset code
-    if action == 'get_reset_code':
-        #validate email
-        validation_err = _check_schema(payload, 'get_reset_code')
-        if validation_err:
-            current_app.logger.error(f'Validation error on reset password: {validation_err}')
+@auth_bp.route('/start_password_reset', methods=['GET'])
+@jwt_required()
+def start_password_reset():
+    '''start reset password process for logged in users'''
+    identity = get_jwt_identity()
+    email = identity['email']
+    session['email'] = email
+    return redirect(url_for('auth.get_reset_code')), 302
+
+@auth_bp.route('/get_reset_code', methods=['POST', 'GET'])
+def get_reset_code():
+    '''get the password reset code'''
+    #get email for logged in users
+    if request.method == 'GET':
+        email = session.get('email')
+        if not email:
             return jsonify({
-                'error': 'Invalid email! Please try again'
-            }), 400
-        email = payload['email']
-        #check if user exists
+            'error': 'Email not found',
+            'messsage': 'An error occured. Please try again.'
+        }), 400
+        session.pop('email')
+    #get and verify email for non logged in users
+    else:
+        payload = request.get_json()
+        #validate payload
+        schema = auth_schema('get_reset_code')
         try:
-            user = users.find_one({'email': email})
+            schema.load(payload)
+        except ValidationError as err:
+            current_app.logger.error(f'Schema error on get_reset_code, {err}')
+            return jsonify({
+                'error': err
+            }), 400
+        #check if user exists
+        email = payload['email']
+        try:
+            user = db.session.query(Users).filter_by(email=email).first()
             if not user:
                 return jsonify({
                 'error': 'Invalid email! Please try again'
@@ -183,70 +182,139 @@ def reset_pwd():
             current_app.logger.error('An error occured while querying user to reset password', exc_info=True)
             return jsonify({
                 'error': 'An error occured! Please try again'
-            }), 400
-        #send reset code
-        try:
-            code = create_random_num()
-            redis_client.setex(email, 5*60, code)
-        except:
-            current_app.logger.error('An error occured while creating the reset code', exc_info=True)
-            return jsonify({
-                'error': 'An error occured! Please try again'
-            }), 400
-        subject = 'AWAN AFRIKA resource hub password reset'
-        body = f'You have requested to reset your password. Use the code below\n\
-                {code}\n\
-                If you did not make this request please reach out to us immediately.'
-        recipients = [email]
-        send_email(subject, recipients, body)
-    #reset password
-    else:
-        validation_err = _check_schema(payload, 'reset_pwd')
-        if validation_err:
-            current_app.logger.error(f'Validation error on reset password: {validation_err}')
-            return jsonify({
-                'error': 'Invalid code! Please try again'
-            }), 400
-        client_code = payload['auth_code']
-        email = payload['email']
-        password = payload['password']
-        server_code = redis_client.get(email)
-        #verify code
-        if server_code != client_code:
-            return jsonify({
-                'error': 'Invalid code! Please try again'
-            }), 400
-        #change password
-        with mongo_client.start_session() as session:
-            with session.start_transaction():
-                try:
-                    users.update_one({'email': email}, {'password': hash_pwd(password)})
-                    session.commit_transaction()
-                except:
-                    session.abort_transaction()
-                    current_app.logger.error('An error occured while resetting password', exc_info=True)
-                    return jsonify({
-                    'error': 'An error occured! Please try again'
-                    }), 500
-        #send confirmation email
-        subject = 'AWAN AFRIKA resource hub password reset successful'
-        body = 'You have successfully reset your password. If this was not you please contact us immediately'
-        recipients = [email]
-        send_email(subject, recipients, body)
-        return jsonify(
-        {
-            'message': 'Password reset successful',
+            }), 500
+    #create reset code
+    code = create_random_num()
+    reset_token = gen_uuid()
+    data = {
+            'reset_code': code,
+            'email': email
         }
+    try:
+        redis_client.setex(reset_token, 5*60, json.dumps(data))
+    except:
+        current_app.logger.error('An error occured while creating the reset code', exc_info=True)
+        return jsonify({
+            'error': 'An error occured! Please try again'
+        }), 500
+    subject = 'Eazy manage account password reset'
+    body = f'You have requested to reset your password. Use the code below within 5 minutes to reset your passowrd\n\
+            {code}\n\
+            If you did not make this request please reach out to us immediately.'
+    recipients = [email]
+    send_email(subject, recipients, body)
+    response = make_response({
+        'message': 'Code sent successfully. Please check your email',
+    })
+    response.set_cookie('reset_token', reset_token, httponly=True)
+    return response, 201
+
+def get_user_data(request, redis_client)->dict:
+    '''retrieve user data from memory'''
+    reset_token = request.cookies.get('reset_token')
+    if not reset_token:
+        return {
+            'status': False,
+            'error': 'An error occured please request another code'
+        }
+    user_data = redis_client.get(reset_token)
+    if not user_data:
+        return {
+            'status': False,
+            'error': 'Session expired. Please request another code'
+        }
+    return {
+        'status': True,
+        'user_data': json.loads(user_data)
+    }
+
+@auth_bp.route('/verify_reset_code', methods=['POST'])
+def verify_reset_code():
+    '''verify code to reset password'''
+    payload = request.get_json()
+    #validate payload
+    user_code = payload['reset_code']
+    if not user_code or len(user_code) != 6 or not user_code.isdigit() :
+        return jsonify({
+            'error': 'Invalid code'
+        }), 400
+    #get user data
+    resp = get_user_data(request, redis_client)
+    if resp['status'] is False:
+        return jsonify({
+            'error': resp['error']
+        }), 400
+    user_data = resp['user_data']
+    #verify code
+    server_code = user_data['reset_code']
+    if server_code != user_code:
+        return jsonify({
+            'error': 'Invalid code. Please try again or request a new code'
+        }), 400
+    return jsonify(
+    {
+        'message': 'Code successfully verified',
+    }
+    ), 200
+
+@auth_bp.route('/create_new_password', methods=['POST'])
+def create_new_password():
+    '''create new password'''
+    payload = request.get_json()
+    #validate payload
+    schema = auth_schema('create_new_password')
+    try:
+        schema.load(payload)
+    except ValidationError as err:
+        current_app.logger.error(f'Schema error on create new password, {err}')
+        return jsonify({
+            'error': err,
+            'message': 'Invalid password format'
+        }), 400
+    password = payload['password']
+    #get user data
+    resp = get_user_data(request, redis_client)
+    if resp['status'] is False:
+        return jsonify({
+            'error': resp['error']
+        }), 400
+    user_data = resp['user_data']
+    email = user_data['email']
+    try:
+        user = db.session.query(Users).filter_by(email=email).first()
+        user.set_pwd(password)
+        db.session.commit()
+    except:
+        db.session.rollback()
+        current_app.logger.error(f'Password reset failed', exc_info=True)
+        return jsonify({
+            'error': 'An error occured. Please try again'
+        }), 500
+    #send confirmation email
+    subject = 'Eazy manage password reset successful'
+    body = 'You have successfully reset your password. If this was not you please contact us immediately'
+    recipients = [email]
+    send_email(subject, recipients, body)
+    return jsonify(
+    {
+        'message': 'Password reset successful',
+    }
     ), 201
 
-@auth_bp.route('/auth_status', methods=['POST'])
+@auth_bp.route('/check_auth_status', methods=['POST'])
 @jwt_required()
-def auth_status():
+def check_auth_status():
     '''checks the auth status'''
     payload = request.get_json()
-    verified = _check_schema(payload, 'auth_status')
-    if not verified:
-        return jsonify({'status': 'false'}), 403
+    #validate payload
+    schema = auth_schema('validate_role')
+    try:
+        schema.load(payload)
+    except ValidationError as err:
+        current_app.logger.error(f'Schema error on check_auth_status, {err}')
+        return jsonify({
+            'error': err
+        }), 400
     identity = get_jwt_identity()
     role = payload['role']
     #verify admin

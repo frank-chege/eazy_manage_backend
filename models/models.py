@@ -4,25 +4,58 @@ from .base_model import Base_model
 
 db = SQLAlchemy()
 
+class Organizations(db.Model):
+    __tablename__ = 'organizations'
+
+    org_id = db.Column(db.String(36), unique=True, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
+    account_type = db.Column(db.Enum('free', 'premium'), default='free', nullable=False)
+    totalemployees = db.Column(db.Integer, nullable=False)
+    email = db.Column(db.String(255), unique=True, nullable=False)
+    #tel = db.Column(db.String(30), unique=True, nullable=False)
+    address = db.Column(db.String(255), nullable=False)
+    departments = db.Column(db.String(500), nullable=True)
+    billing_info = db.Column(db.String(255), nullable=True)
+    joined = db.Column(db.DateTime, nullable=False)
+    #relationship
+    user = relationship('Users', back_populates='organization')
+    task = relationship('Tasks', back_populates='organization')
+
+    def to_dict(self):
+        '''convert model to dict'''
+        return{
+            'org_id': self.org_id,
+            'name': self.org_name,
+            'plan': self.plan,
+            'email': self.org_email,
+            'address': self.address,
+            'departments': self.departments,
+            'billing_info': self.billing_info,
+            'joined': self.joined.strftime('%Y-%m-%d %H:%M:%S')
+        }
+
 class Users(db.Model, Base_model):
     __tablename__ = 'users'
 
     user_id = db.Column(db.String(36), unique=True, primary_key=True)
     role = db.Column(db.Enum('admin', 'employee'), default='employee', nullable=False)
-    first_name = db.Column(db.String(255), nullable=False)
-    last_name = db.Column(db.String(255), nullable=False)
+    first_name = db.Column(db.String(255), nullable=True)
+    last_name = db.Column(db.String(255), nullable=True)
     email = db.Column(db.String(255), unique=True, nullable=False)
     #contact = db.Column(db.String(30), unique=True, nullable=False)
     #gender = db.Column(db.Enum('male', 'female', 'trans', 'other'), nullable=False)
     status = db.Column(db.Enum('active', 'leave', 'inactive'), default='active')
-    department = db.Column(db.Enum('ACCOUNTS', 'IT', 'HR'), nullable=False)
-    job_title = db.Column(db.Enum('hr', 'developer', 'accountant'), nullable=False)
+    department = db.Column(db.Enum('ACCOUNTS', 'IT', 'HR'), nullable=True)
+    job_title = db.Column(db.Enum('hr', 'developer', 'accountant'), nullable=True)
     #national_id = db.Column(db.Integer, unique=True, nullable=True)
     joined = db.Column(db.Date, nullable=True)
     password = db.Column(db.String(255), nullable=False)
+    #fk
+    org_id = db.Column(db.String(36), db.ForeignKey('organizations.org_id'), nullable=False)
     
     # relationships
     task = relationship('Tasks', back_populates='user')
+    organization = relationship('Organizations', back_populates='user')
 
     def to_dict(self):
         '''convert model to dictionary'''
@@ -55,8 +88,10 @@ class Tasks(db.Model):
     comments = db.Column(db.String(255))
     #fk
     user_id = db.Column(db.String(36), db.ForeignKey('users.user_id'), nullable=False)
+    org_id = db.Column(db.String(36), db.ForeignKey('organizations.org_id'), nullable=False)
     #relationship
     user = relationship('Users', back_populates='task')
+    organization = relationship('Organizations', back_populates='task')
 
     def to_dict(self)->dict:
         '''return dict rep of the model'''

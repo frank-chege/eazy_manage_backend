@@ -67,7 +67,7 @@ def pre_process_file(file, dir_name, username)->str:
 
 def create_random_num():
     '''creates a random password'''
-    return str(random.randint(000000, 999999))
+    return str(random.randint(111111, 999999))
 
 def check_auth_status(request_role)->bool:
         '''checks the auth status'''

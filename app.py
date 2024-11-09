@@ -13,8 +13,24 @@ from flask_talisman import Talisman
 from flask_cors import CORS
 from flask_jwt_extended import JWTManager
 from datetime import timedelta
+from sqlalchemy import create_engine, text
 
 app = Flask(__name__)
+
+def create_database_if_not_exists(db_name, engine):
+    '''creates the db if it does not exist'''
+    with engine.connect() as connection:
+        # Check if the database exists
+        result = connection.execute(text(f"SHOW DATABASES LIKE '{db_name}';"))
+        db_exists = result.fetchone()
+
+        if not db_exists:
+            # Create the database if it doesn't exist
+            connection.execute(text(f"CREATE DATABASE {db_name};"))
+            app.logger.info(f"Database '{db_name}' created successfully.")
+        else:
+            app.logger.info(f"Database '{db_name}' already exists.")
+
 
 def configure_app(app):
     '''create and configure app'''
@@ -33,7 +49,7 @@ def configure_app(app):
     app.config['JWT_COOKIE_SECURE'] = True
     app.config['JWT_COOKIE_SAMESITE'] = 'None'
 
-    # #local
+    # # #local
     # app.config['JWT_COOKIE_SECURE'] = False
     # app.config['JWT_COOKIE_SAMESITE'] = 'Lax'
 
@@ -54,14 +70,20 @@ def configure_app(app):
     #set up database
     try:
         # #production
-        app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('MYSQL_URL')
+        #app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('MYSQL_URL')
 
         # #local
-        # db_host = os.getenv('DB_HOST')
-        # db_user = os.getenv('DB_USER')
-        # db_password = os.getenv('DB_PASSWORD')
-        # db_name = os.getenv('DB_NAME')
-        # app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}'
+        db_host = os.getenv('MYSQLHOST')
+        db_user = os.getenv('MYSQLUSER')
+        db_password = os.getenv('MYSQLPASSWORD')
+        db_name = os.getenv('MYSQLDATABASE')
+
+        #check if db exists
+        engine_uri = f'mysql+pymysql://{db_user}:{db_password}@{db_host}/'
+        engine = create_engine(engine_uri)
+        create_database_if_not_exists(db_name, engine)
+
+        app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}'
 
         app.logger.info('DataBase set up successfully')
         db.init_app(app)
@@ -102,7 +124,6 @@ def configure_app(app):
     except:
         app.logger.critical(f'Mail service setup failed!', exc_info=True)
         raise
-    
     return app
 
 #create the app
@@ -118,4 +139,4 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0')
 
     #local
-    #app.run(host='0.0.0.0', debug=True)
+    # app.run(host='0.0.0.0', debug=True)
