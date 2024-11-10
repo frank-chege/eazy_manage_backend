@@ -53,6 +53,13 @@ def configure_app(app):
     # app.config['JWT_COOKIE_SECURE'] = False
     # app.config['JWT_COOKIE_SAMESITE'] = 'Lax'
 
+    #production session
+    app.config['SESSION_COOKIE_SAMESITE'] = 'None'
+
+    #local session
+    #app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
+
+
     JWTManager(app)
 
     # #serve the app over https only
