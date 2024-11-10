@@ -54,7 +54,7 @@ def configure_app(app):
     # app.config['JWT_COOKIE_SAMESITE'] = 'Lax'
 
     #production session
-    app.config['SESSION_COOKIE_SAMESITE'] = 'None'
+    app.config['SESSION_COOKIE_SAMESITE'] = None
 
     #local session
     #app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
