@@ -135,8 +135,4 @@ except:
     raise
 
 if __name__ == '__main__':
-    # #production
     app.run(host='0.0.0.0')
-
-    #local
-    # app.run(host='0.0.0.0', debug=True)
