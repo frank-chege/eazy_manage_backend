@@ -26,7 +26,6 @@ class auth_schema(Schema):
     #nationalId = fields.Int(required=False, validate=Length(max=20))
     joined = fields.Date(required=False)
     password = fields.Str(required=False, validate=Length(min=6, max=16))
-    auth_code = fields.Int(required=False, validate=Length(min=6, max=6))
     
     
     def __init__(self, activity):

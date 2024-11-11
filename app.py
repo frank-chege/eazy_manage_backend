@@ -55,9 +55,11 @@ def configure_app(app):
 
     #production session
     app.config['SESSION_COOKIE_SAMESITE'] = None
+    app.config['SESSION_COOKIE_SECURE'] = True  
 
     #local session
     #app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
+    #app.config['SESSION_COOKIE_SECURE'] = False
 
 
     JWTManager(app)

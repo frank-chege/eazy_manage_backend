@@ -137,6 +137,29 @@ def login():
     set_refresh_cookies(response, refresh_token)
     return response, 200
 
+@auth_bp.route('/check_auth_status', methods=['POST'])
+@jwt_required()
+def check_auth_status():
+    '''checks the auth status'''
+    payload = request.get_json()
+    #validate payload
+    schema = auth_schema('validate_role')
+    try:
+        schema.load(payload)
+    except ValidationError as err:
+        current_app.logger.error(f'Schema error on check_auth_status, {err}')
+        return jsonify({
+            'status': 'false',
+            'message': 'Invalid request'
+        }), 400
+    identity = get_jwt_identity()
+    role = payload['role']
+    #verify admin
+    if role == 'admin':
+        if role != identity['role']:
+            return jsonify({'status': 'false'}), 403
+    return jsonify({'status': 'true'}), 200
+
 @auth_bp.route('/start_password_reset', methods=['GET'])
 @jwt_required()
 def start_password_reset():
@@ -300,28 +323,6 @@ def create_new_password():
         'message': 'Password reset successful',
     }
     ), 201
-
-@auth_bp.route('/check_auth_status', methods=['POST'])
-@jwt_required()
-def check_auth_status():
-    '''checks the auth status'''
-    payload = request.get_json()
-    #validate payload
-    schema = auth_schema('validate_role')
-    try:
-        schema.load(payload)
-    except ValidationError as err:
-        current_app.logger.error(f'Schema error on check_auth_status, {err}')
-        return jsonify({
-            'error': err
-        }), 400
-    identity = get_jwt_identity()
-    role = payload['role']
-    #verify admin
-    if role == 'admin':
-        if role != identity['role']:
-            return jsonify({'status': 'false'}), 403
-    return jsonify({'status': 'true'}), 200
         
 @auth_bp.route('/logout', methods=['POST'])
 @jwt_required()
